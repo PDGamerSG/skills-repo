@@ -16,6 +16,8 @@ Trail of Bits bundles are distributed under CC-BY-SA-4.0. Attribution is to Trai
 
 Apache-2.0 and MIT bundles retain their respective upstream notices. Supporting assets may carry additional notices included in their source folders. The original Anthropic third-party notices are also preserved in `licenses/anthropics/THIRD_PARTY_NOTICES.md`.
 
+`local-skills/` holds unchanged bundles copied from a Windows machine's skill folders. Each one keeps its MIT or Apache-2.0 license file, and copies of those files are under `licenses/local/`. The 8 bundles marked `owned-by-user` in [catalog/published-local.json](catalog/published-local.json) are the user's own skills and carry no third-party license.
+
 Restricted installed skills, unresolved local licenses, and account/runtime-specific user instructions are not in the public skill tree. Private snapshots remain ignored under `.local/`; references do not grant redistribution rights.
 
 Full per-skill provenance and license-file hashes: [catalog/skills.json](catalog/skills.json).

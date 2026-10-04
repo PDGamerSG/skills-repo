@@ -37,7 +37,7 @@ class RepositoryTests(unittest.TestCase):
         self.root_patch.stop()
         self.temp.cleanup()
     def install(self, **kwargs):
-        args = dict(ids=['test/sample'], profile=None, dest=str(self.root / 'installed'), dry_run=False, local=False)
+        args = dict(ids=['test/sample'], profile=None, dest=str(self.root / 'installed'), dry_run=False, local=False, published=False)
         args.update(kwargs)
         with contextlib.redirect_stdout(io.StringIO()):
             repo.install(SimpleNamespace(**args))
@@ -89,6 +89,64 @@ class RepositoryTests(unittest.TestCase):
         (self.root / 'licenses/test/sample/LICENSE').write_text('changed')
         with self.assertRaises(ValueError): self.install()
         self.assertFalse((self.root / 'installed').exists())
+
+
+class PublishTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.root = Path(self.temp.name).resolve() / 'repo'
+        self.home = Path(self.temp.name).resolve() / 'home'
+        self.patches = [patch.object(repo, 'ROOT', self.root),
+                        patch.object(repo, 'local_roots', lambda: {'claude-user': self.home / 'skills',
+                                                                   'claude-plugin-cache': self.home / 'cache'})]
+        for p in self.patches: p.start()
+        repo.write_json(self.root / 'catalog/skills.json', {'skills': []})
+        repo.write_json(self.root / 'catalog/profiles.json', {})
+        repo.write_json(self.root / 'catalog/owned-skills.json', {'names': ['mine']})
+    def tearDown(self):
+        for p in self.patches: p.stop()
+        self.temp.cleanup()
+    def skill(self, where, name, license_text=None):
+        folder = self.home / where / name
+        folder.mkdir(parents=True)
+        (folder / 'SKILL.md').write_text(f'---\nname: {name}\ndescription: Test.\n---\nBody\n')
+        if license_text:
+            (folder / 'LICENSE').write_text(license_text)
+        return folder
+    def publish(self):
+        with contextlib.redirect_stdout(io.StringIO()):
+            repo.publish(SimpleNamespace())
+        return repo.read_json(self.root / 'catalog/published-local.json')
+    def test_publishes_open_and_owned_only(self):
+        self.skill('cache', 'open', 'MIT License\nPermission is hereby granted, free of charge, without restriction')
+        self.skill('skills', 'mine')
+        self.skill('cache', 'mine')
+        self.skill('cache', 'vendor')
+        self.skill('skills', 'closed', 'You may not retain copies outside the Services.')
+        self.skill('skills/.trash/x', 'deleted', 'MIT License\nPermission is hereby granted, free of charge, without restriction')
+        data = self.publish()
+        self.assertEqual(sorted(e['name'] for e in data['skills']), ['mine', 'open'])
+        reasons = {w['name']: w['reason'] for w in data['withheld']}
+        self.assertEqual(reasons, {'mine': 'No license file; vendor-owned', 'vendor': 'No license file; vendor-owned',
+                                   'closed': 'Restricted license'})
+        for e in data['skills']:
+            self.assertTrue((self.root / e['path'] / 'SKILL.md').exists())
+    def test_duplicate_content_published_once(self):
+        self.skill('skills', 'mine')
+        self.skill('skills/synced/0d13df11-0139-4163-9927-e73ea9adbc26', 'mine')
+        data = self.publish()
+        self.assertEqual(len(data['skills']), 1)
+        self.assertEqual([o['path'] for o in data['skills'][0]['origins']], ['mine', 'synced/<id>/mine'])
+    def test_verify_flags_uncataloged_and_tampered_bundles(self):
+        self.skill('skills', 'mine')
+        entry = self.publish()['skills'][0]
+        (self.root / entry['path'] / 'SKILL.md').write_text('---\nname: mine\ndescription: Changed.\n---\n')
+        (self.root / 'local-skills/stray').mkdir()
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(repo.verify(SimpleNamespace(local=False)), 1)
+        errors = repo.read_json(self.root / 'research/validation.json')['errors']
+        self.assertEqual(errors, [f'{entry["id"]}: Bundle integrity mismatch',
+                                  'Uncataloged published bundle: local-skills/stray'])
 
 
 if __name__ == '__main__': unittest.main()

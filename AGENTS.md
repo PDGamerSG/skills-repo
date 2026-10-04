@@ -6,6 +6,8 @@ material unless the user's task calls for a specific skill.
 
 Keep upstream bundles unchanged. Record selections and provenance in `catalog/`.
 Keep local user skill snapshots and absolute source paths under ignored `.local/`.
+Only `scripts/skills_repo.py publish` writes local bundles to the tracked
+`local-skills/` tree, and only open-licensed or user-owned ones.
 Do not run imported helper scripts during catalog maintenance.
 
 After changing repository tooling or catalogs, run:

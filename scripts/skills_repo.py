@@ -20,15 +20,26 @@ ROOT = Path(__file__).resolve().parents[1]
 SKIP_DIRS = {'.git', 'node_modules', '__pycache__', '.venv', 'venv'}
 SKIP_FILES = {'.DS_Store', '.env', '.env.local', '.env.production'}
 SAFE_NAME = re.compile(r'^[a-z0-9][a-z0-9-]{0,63}$')
+PUBLISHABLE = {'MIT', 'Apache-2.0', 'CC-BY-SA-4.0'}
+# Windows has no POSIX exec bit, and Git checks out files there without one.
+EXEC_BITS = os.name != 'nt'
+# Roots whose skills the user may have written; plugin caches belong to their vendors.
+OWNER_ROOTS = {'claude-user', 'codex-user', 'shared-agent'}
+ACCOUNT_ID = re.compile(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')
 
 
 def read_json(path):
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def write_text(path, text):
+    """Write UTF-8 with LF endings on every OS."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding='utf-8', newline='\n')
 
 
 def write_json(path, value):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + '\n')
+    write_text(path, json.dumps(value, indent=2, ensure_ascii=False) + '\n')
 
 
 def metadata(path):
@@ -67,10 +78,23 @@ def fingerprint(root):
     for path in files_in(root):
         manifest.append({'path': path.relative_to(root).as_posix(),
                          'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
-                         'executable': bool(path.stat().st_mode & 0o111)})
+                         'executable': EXEC_BITS and bool(path.stat().st_mode & 0o111)})
     manifest.sort(key=lambda x: x['path'])
     digest = hashlib.sha256(json.dumps(manifest, sort_keys=True).encode()).hexdigest()
     return digest, manifest
+
+
+def content_key(manifest):
+    """Hash of paths and contents only, comparable across operating systems."""
+    return hashlib.sha256(json.dumps([(f['path'], f['sha256']) for f in manifest]).encode()).hexdigest()
+
+
+def matches(entry, root):
+    """Compare a bundle with its catalog entry; exec bits count only where the OS records them."""
+    digest, manifest = fingerprint(root)
+    if EXEC_BITS:
+        return digest == entry['sha256'] and manifest == entry['files']
+    return content_key(manifest) == content_key(entry['files'])
 
 
 def copy_bundle(source, dest):
@@ -123,12 +147,16 @@ def find_skills(root):
         yield from walk(root)
 
 
+def local_roots():
+    return {'claude-user': Path.home() / '.claude/skills',
+            'codex-user': Path.home() / '.codex/skills',
+            'shared-agent': Path.home() / '.agents/skills',
+            'claude-plugin-cache': Path.home() / '.claude/plugins/cache',
+            'openai-plugin-cache': Path.home() / '.codex/plugins/cache'}
+
+
 def snapshot(args):
-    roots = {'claude-user': Path.home() / '.claude/skills',
-             'codex-user': Path.home() / '.codex/skills',
-             'shared-agent': Path.home() / '.agents/skills',
-             'claude-plugin-cache': Path.home() / '.claude/plugins/cache',
-             'openai-plugin-cache': Path.home() / '.codex/plugins/cache'}
+    roots = local_roots()
     if args.root:
         roots = {f'custom-{i+1}': Path(p).expanduser().resolve() for i, p in enumerate(args.root)}
     local = ROOT / '.local'
@@ -187,6 +215,90 @@ def snapshot(args):
                       'private_snapshots': len({r['id'] for r in records if r['archive_path']}),
                       'restricted_references': sum(r['status'].startswith('reference') for r in records),
                       'counts': dict(counts), 'errors': errors, 'metadata_warnings': len(warnings)}, indent=2))
+    return 1 if errors else 0
+
+
+def publish(args):
+    """Copy redistributable local bundles into local-skills/ and record what stays private."""
+    owned = set(read_json(ROOT / 'catalog/owned-skills.json')['names'])
+    vendored = {content_key(e['files']): e['id'] for e in read_json(ROOT / 'catalog/skills.json')['skills']}
+    published, withheld, errors = {}, [], []
+    for label, root in local_roots().items():
+        for path in find_skills(root):
+            rel = path.parent.relative_to(root)
+            if '.trash' in rel.parts:
+                continue
+            # Account UUIDs in synced paths identify the user, not the skill.
+            origin = {'provider': label, 'path': ACCOUNT_ID.sub('<id>', rel.as_posix())}
+            try:
+                try:
+                    name, valid = metadata(path)['name'], True
+                except (ValueError, yaml.YAMLError):
+                    name, valid = path.parent.name, False
+                licfiles = license_files(path.parent, root.resolve())
+                kind = license_kind(licfiles)
+                digest, manifest = fingerprint(path.parent)
+                slug = re.sub(r'[^a-z0-9-]', '-', name.lower()).strip('-') or 'unnamed'
+                key = f'{slug}--{digest[:16]}'
+                owner = name in owned and label in OWNER_ROOTS
+                same = vendored.get(content_key(manifest))
+                if same:
+                    reason = f'Same content as public import {same}'
+                elif kind == 'restricted':
+                    reason = 'Restricted license'
+                elif not valid:
+                    reason = 'Malformed frontmatter'
+                elif kind not in PUBLISHABLE and not owner:
+                    reason = 'No license file; vendor-owned'
+                else:
+                    reason = None
+                if reason:
+                    withheld.append({'name': name, **origin, 'license': kind, 'sha256': digest, 'reason': reason})
+                    continue
+                if key in published:
+                    published[key]['origins'].append(origin)
+                    continue
+                dest = ROOT / 'local-skills' / key
+                if not dest.exists():
+                    copy_bundle(path.parent, dest)
+                if fingerprint(dest)[0] != digest:
+                    raise ValueError(f'Published copy differs from source: {key}')
+                notice_root = ROOT / 'licenses/local' / key
+                for i, lic in enumerate(licfiles):
+                    notice_root.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(lic, notice_root / f'{i}-{lic.name}')
+                lics = sorted(notice_root.iterdir()) if notice_root.exists() else []
+                published[key] = {
+                    'id': key, 'name': name, 'license': kind if kind in PUBLISHABLE else 'owned-by-user',
+                    'origins': [origin], 'path': dest.relative_to(ROOT).as_posix(),
+                    'prerequisites': 'Original plugin tools, packages, and connectors; see SKILL.md.',
+                    'sha256': digest, 'files': manifest,
+                    'license_files': [p.relative_to(ROOT).as_posix() for p in lics],
+                    'license_hashes': {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                                       for p in lics}}
+            except (ValueError, OSError) as exc:
+                errors.append({**origin, 'error': str(exc)})
+    entries = sorted(published.values(), key=lambda e: e['id'])
+    write_json(ROOT / 'catalog/published-local.json', {'captured_at': datetime.now(timezone.utc).isoformat(),
+                                                      'skills': entries, 'withheld': withheld, 'errors': errors})
+    lines = ['# Published local skills', '',
+             f'{len(entries)} distinct bundles copied unchanged from local skill folders into `local-skills/`. '
+             'Exact files and hashes: [published-local.json](published-local.json).', '',
+             'A bundle is published when it carries an MIT, Apache-2.0, or CC-BY-SA-4.0 license file, '
+             'or when a user skill folder holds it under a name listed in [owned-skills.json](owned-skills.json). '
+             'Restricted, unlicensed vendor, and malformed bundles stay local and appear below by name only.', '',
+             '| Skill | License | Found in |', '|---|---|---|']
+    for e in entries:
+        where = ', '.join(sorted({o['provider'] for o in e['origins']}))
+        lines.append(f'| [{e["name"]}](../{e["path"]}/SKILL.md) | {e["license"]} | {where} |')
+    lines.extend(['', '## Withheld', '', '| Skill | Reason | Found in |', '|---|---|---|'])
+    groups = {}
+    for w in withheld:
+        groups.setdefault((w['name'], w['reason']), set()).add(w['provider'])
+    for (name, reason), providers in sorted(groups.items()):
+        lines.append(f'| {name} | {reason} | {", ".join(sorted(providers))} |')
+    write_text(ROOT / 'catalog/PUBLISHED_LOCAL.md', '\n'.join(lines) + '\n')
+    print(json.dumps({'published': len(entries), 'withheld_occurrences': len(withheld), 'errors': errors}, indent=2))
     return 1 if errors else 0
 
 
@@ -265,8 +377,7 @@ def verify(args):
             skill = ROOT / entry['path']
             if metadata(skill / 'SKILL.md')['name'] != entry['name']:
                 raise ValueError('Name mismatch')
-            digest, manifest = fingerprint(skill)
-            if digest != entry['sha256'] or manifest != entry['files']:
+            if not matches(entry, skill):
                 raise ValueError('Bundle integrity mismatch')
             if not entry['license_files'] or any(not (ROOT / p).is_file() for p in entry['license_files']):
                 raise ValueError('Missing license attribution')
@@ -279,6 +390,25 @@ def verify(args):
     found = {str(p.resolve()) for p in (ROOT / 'skills').rglob('SKILL.md')}
     for p in found - expected:
         errors.append(f'Uncataloged nested skill: {p}')
+    published_path = ROOT / 'catalog/published-local.json'
+    published = read_json(published_path)['skills'] if published_path.exists() else []
+    for entry in published:
+        try:
+            if metadata(ROOT / entry['path'] / 'SKILL.md')['name'] != entry['name']:
+                raise ValueError('Name mismatch')
+            if not matches(entry, ROOT / entry['path']):
+                raise ValueError('Bundle integrity mismatch')
+            if entry['license'] in PUBLISHABLE and not entry['license_files']:
+                raise ValueError('Missing license attribution')
+            for p, expected_hash in entry['license_hashes'].items():
+                if hashlib.sha256((ROOT / p).read_bytes()).hexdigest() != expected_hash:
+                    raise ValueError('License attribution integrity mismatch')
+        except (OSError, ValueError, yaml.YAMLError) as exc:
+            errors.append(f'{entry["id"]}: {exc}')
+    if (ROOT / 'local-skills').is_dir():
+        cataloged = {Path(e['path']).name for e in published}
+        for extra in sorted({p.name for p in (ROOT / 'local-skills').iterdir()} - cataloged):
+            errors.append(f'Uncataloged published bundle: local-skills/{extra}')
     profiles = read_json(ROOT / 'catalog/profiles.json')
     for name, members in profiles.items():
         unknown = set(members) - ids
@@ -292,13 +422,12 @@ def verify(args):
         errors.extend(str(e) for e in local['errors'])
         for e in {e['id']: e for e in local['skills'] if e['archive_path']}.values():
             try:
-                digest, manifest = fingerprint(ROOT / e['archive_path'])
-                if digest != e['sha256'] or manifest != e['files']:
+                if not matches(e, ROOT / e['archive_path']):
                     raise ValueError('Private snapshot integrity mismatch')
             except (ValueError, OSError) as exc:
                 errors.append(f'{e["id"]}: {exc}')
     report = {'checked_at': datetime.now(timezone.utc).isoformat(), 'public_skills': len(data),
-              'public_files': sum(len(e['files']) for e in data), 'profiles': len(profiles),
+              'public_files': sum(len(e['files']) for e in data), 'published_local': len(published), 'profiles': len(profiles),
               'local_checked': args.local, 'passed': not errors, 'errors': errors,
               'scope': 'Metadata, complete bundle hashes, attribution presence, profile IDs; no skill runtime execution.'}
     write_json(ROOT / 'research/validation.json', report)
@@ -307,6 +436,11 @@ def verify(args):
 
 
 def listing(args):
+    if args.published:
+        for e in read_json(ROOT / 'catalog/published-local.json')['skills']:
+            if not args.query or args.query.lower() in e['id'].lower():
+                print(f'{e["id"]:75} {e["license"]}')
+        return
     if args.local:
         entries = read_json(ROOT / 'catalog/local-skills.json')['skills']
         unique = {e['id']:e for e in entries}
@@ -332,6 +466,10 @@ def install(args):
             entry['prerequisites'] = 'Original skill dependencies and app/plugin tools; private local use only.'
             entry['license_files'] = [str(p.relative_to(ROOT)) for p in sorted((ROOT / '.local/licenses' / e['id']).glob('*'))]
             catalog[e['id']] = entry
+    elif args.published:
+        if args.profile:
+            raise ValueError('Profiles contain public skills; choose published bundle IDs instead')
+        catalog = {e['id']: e for e in read_json(ROOT / 'catalog/published-local.json')['skills']}
     else:
         catalog = {e['id']: e for e in read_json(ROOT / 'catalog/skills.json')['skills']}
     selected = read_json(ROOT / 'catalog/profiles.json')[args.profile] if args.profile else args.ids
@@ -351,7 +489,7 @@ def install(args):
             raise ValueError(f'Selected skills collide: {e["name"]}')
         names.add(e['name'])
         source = ROOT / e['path']
-        if fingerprint(source)[0] != e['sha256']:
+        if not matches(e, source):
             raise ValueError(f'Integrity check failed: {key}')
         if not args.local:
             for lic, expected_hash in e['license_hashes'].items():
@@ -382,11 +520,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     p = sub.add_parser('snapshot'); p.add_argument('--root', action='append'); p.set_defaults(fn=snapshot)
+    p = sub.add_parser('publish'); p.set_defaults(fn=publish)
     p = sub.add_parser('vendor'); p.set_defaults(fn=vendor)
     p = sub.add_parser('verify'); p.add_argument('--local', action='store_true'); p.set_defaults(fn=verify)
-    p = sub.add_parser('list'); p.add_argument('query', nargs='?', default=''); p.add_argument('--local', action='store_true'); p.set_defaults(fn=listing)
+    p = sub.add_parser('list'); p.add_argument('query', nargs='?', default=''); p.add_argument('--local', action='store_true')
+    p.add_argument('--published', action='store_true'); p.set_defaults(fn=listing)
     p = sub.add_parser('install'); p.add_argument('ids', nargs='*'); p.add_argument('--profile');
-    p.add_argument('--dest', required=True); p.add_argument('--dry-run', action='store_true'); p.add_argument('--local', action='store_true'); p.set_defaults(fn=install)
+    p.add_argument('--dest', required=True); p.add_argument('--dry-run', action='store_true'); p.add_argument('--local', action='store_true')
+    p.add_argument('--published', action='store_true'); p.set_defaults(fn=install)
     args = parser.parse_args()
     try:
         return args.fn(args) or 0

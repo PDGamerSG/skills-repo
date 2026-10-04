@@ -15,11 +15,12 @@ on this Mac. Existing skill installations are unchanged.
 | Private preservation | 133 distinct bundles, including supporting resources | `.local/archive/` (ignored by Git) |
 | Restricted installed bundles | Five distinct bundles / nine occurrences, recorded as references to the original installations | `.local/inventory.json` |
 | Public imports | 76 unchanged bundles from seven sources, with pinned commits and licenses | [Public catalog](catalog/README.md), `skills/` |
+| Published Windows skills | 87 distinct bundles from the Windows machine: 79 with MIT or Apache-2.0 license files and 8 written by the user | [Published catalog](catalog/PUBLISHED_LOCAL.md), `local-skills/` |
 | Broader discovery | 926 folders inventoried across ten public repositories | [Screened catalog](catalog/screened-skills.json) |
 | Research | Selection rationale, evidence, dependency limits, and overlap analysis | [Research report](research/REPORT.md) |
 
-Local snapshots stay on this Mac. A Git clone carries the public imports and
-catalogs, not `.local/`. Restricted copies were not duplicated. Local source
+Local snapshots stay on this Mac. A Git clone carries the public imports, the
+published Windows skills, and catalogs, not `.local/`. Restricted copies were not duplicated. Local source
 checkouts from uninstalled marketplace collections were not treated as skills you use.
 Cloud-only skills that are absent from this Mac are outside this inventory.
 
@@ -91,6 +92,13 @@ python3 scripts/skills_repo.py list --local research
 python3 scripts/skills_repo.py install --local BUNDLE-ID --dest .local/local-staging --dry-run
 ```
 
+Published Windows skills install the same way with `--published`:
+
+```sh
+python3 scripts/skills_repo.py list --published caveman
+python3 scripts/skills_repo.py install --published BUNDLE-ID --dest .local/staging-skills --dry-run
+```
+
 Restricted references and malformed originals are excluded from installation.
 Installed copies include provenance and attribution. Copying a skill does not
 install its packages, connected MCP server, plugin hooks, account access, or
@@ -102,6 +110,7 @@ ChatGPT plugin. See [official OpenAI skill guidance](https://developers.openai.c
 
 ```sh
 python3 scripts/skills_repo.py snapshot
+python3 scripts/skills_repo.py publish
 python3 scripts/skills_repo.py vendor
 python3 scripts/build_catalog.py
 python3 -m unittest discover -s tests -v
@@ -112,6 +121,18 @@ python3 scripts/skills_repo.py verify --local
 symlinks, preserves full eligible bundles, and records duplicates by content hash.
 It skips environment files and generated caches. It preserves malformed local
 instructions verbatim and records metadata warnings rather than editing originals.
+
+`publish` scans the same local roots and copies a bundle into `local-skills/`
+when it has an MIT, Apache-2.0, or CC-BY-SA-4.0 license file, or when a user
+skill folder holds it under a name in [owned-skills.json](catalog/owned-skills.json).
+It skips `.trash`, restricted licenses, unlicensed vendor bundles, malformed
+frontmatter, and copies of public imports, and lists each skipped one by name in
+[PUBLISHED_LOCAL.md](catalog/PUBLISHED_LOCAL.md). It replaces account UUIDs in
+recorded paths with `<id>`.
+
+`.gitattributes` turns off line-ending conversion, so a Windows checkout has the
+same bytes and hashes as a Mac one. Windows does not record executable bits, so
+`verify` and `install` compare only paths and file hashes there.
 
 `vendor` imports exactly the reviewed paths and commits in
 [sources.lock.json](catalog/sources.lock.json). It rejects changed upstream

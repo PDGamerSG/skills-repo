@@ -1,26 +1,11 @@
 {
-  "checked_at": "2026-10-04T19:40:04.578232+00:00",
+  "checked_at": "2026-10-04T19:59:57.126167+00:00",
   "public_skills": 76,
   "public_files": 1217,
+  "published_local": 87,
   "profiles": 8,
-  "local_checked": true,
+  "local_checked": false,
   "passed": true,
   "errors": [],
-  "scope": "Metadata, complete bundle hashes, attribution presence, profile IDs; no skill runtime execution.",
-  "tool_tests": {
-    "command": "python3 -m unittest discover -s tests -v",
-    "tests": 12,
-    "passed": true
-  },
-  "integration_checks": {
-    "balanced_profile_copy": {
-      "skills": 10,
-      "all_resource_hashes_verified": true,
-      "attribution_present": true
-    },
-    "local_bundle_restore": true,
-    "fresh_pinned_sparse_fetch": "supabase/agent-skills",
-    "authored_markdown_links": true,
-    "existing_user_skills_changed": false
-  }
+  "scope": "Metadata, complete bundle hashes, attribution presence, profile IDs; no skill runtime execution."
 }

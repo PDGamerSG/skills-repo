@@ -1,0 +1,2039 @@
+{
+  "captured_at": "2026-10-04T19:26:21.690338+00:00",
+  "counts": {
+    "claude-user": 26,
+    "codex-user": 94,
+    "shared-agent": 2,
+    "claude-plugin-cache": 68,
+    "openai-plugin-cache": 35
+  },
+  "skills": [
+    {
+      "id": "animate--a1ca8ca258064eca",
+      "name": "animate",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "a1ca8ca258064ecaa79a63284948187c259f0e7fc54d1e106d334088e2e5c15c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "cardboard--c75a8488435778b4",
+      "name": "cardboard",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "c75a8488435778b42ea3c2701d21dab7b7863f2003a17039035892388c3cafb9",
+      "status": "private-snapshot",
+      "metadata_valid": false
+    },
+    {
+      "id": "ego-browser--1522ef6138e3928f",
+      "name": "ego-browser",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "1522ef6138e3928f813b97f63e5e0af78584e48c4d1d05cd28ac6e80dd26d605",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "emil-design-eng--775e8bec81e9dc6f",
+      "name": "emil-design-eng",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "775e8bec81e9dc6f01c8d579c0d8367664b99823c635af0ef1a78e1a7ea93749",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "find-animation-opportunities--1fd208a2b33d4f39",
+      "name": "find-animation-opportunities",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "1fd208a2b33d4f39775949fb8afe56a71f7cddffc8168628d0eee0d2cca8aafe",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "impeccable--5c25c911a0e453a7",
+      "name": "impeccable",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "5c25c911a0e453a7e4a9a6afabb0e6374aeb19cda773bcdf0c82e7aa463473ae",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "improve-animations--44de1b5082e5fbe1",
+      "name": "improve-animations",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "44de1b5082e5fbe14ed872b907fc0381301b4885603eb9f8377d293b299cbccf",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "prompt-master--d5eb04df5b5f285b",
+      "name": "prompt-master",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "d5eb04df5b5f285bcef1188d932110034a50ba205976f80a32a67c4bd2c82d9a",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research--527b1b313f43b99c",
+      "name": "research",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "527b1b313f43b99c2cc814b4b526e783d71aeac45620110127f277d60c6af50b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-add-fields--90b29974d3489375",
+      "name": "research-add-fields",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "90b29974d34893753216c8f31de038737f48f90c0ac4aa9d997006207a35cdaf",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-add-items--66ac4a616ac68e07",
+      "name": "research-add-items",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "66ac4a616ac68e07176a77535d54cb358dbb10f7a7b2643164599ae51c746beb",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-deep--b58c638a5814139d",
+      "name": "research-deep",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "b58c638a5814139da5d6eb262410f0f2cd9a2c0a4446a43a718f480d4d806f78",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-report--c092b7fafd80bc44",
+      "name": "research-report",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "c092b7fafd80bc44471e81c91145cc3ea3d18a55e792ef09cc7afc807de8a814",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "docs--42754f318cb61a41",
+      "name": "docs",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "42754f318cb61a41a0a5c631ba42f9ae8e012449c20acb28c936e9271ca49f23",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "docx--3ad4a7cae392a368",
+      "name": "docx",
+      "provider": "claude-user",
+      "license": "restricted",
+      "sha256": "3ad4a7cae392a368124c13c75d638af67b682c85285392f90f9bd8d17d9510f7",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "google-workspace--aa6ae0c5f9af2207",
+      "name": "google-workspace",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "aa6ae0c5f9af220751ccaf42abe494b1fcbb60c4ab6013a31b58922f2005579e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "humanizer--53f1cb76b5ec3d92",
+      "name": "humanizer",
+      "provider": "claude-user",
+      "license": "MIT",
+      "sha256": "53f1cb76b5ec3d9206b5719fd22714524e93d9cd932c329e3dffaa876ddb1beb",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "import-memory--0f9a775246cd8176",
+      "name": "import-memory",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "0f9a775246cd81763a3661b171e54d8deb7732cfd048c9aaa4d4e129ceaa690d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "learn--092d454ce301722f",
+      "name": "learn",
+      "provider": "claude-user",
+      "license": "Apache-2.0",
+      "sha256": "092d454ce301722fdaecd64fe86cf9f6e22d3ab1faceb6480ef384d905fda333",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "morning--0afab28569c7dbeb",
+      "name": "morning",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "0afab28569c7dbeb79f8922cd2f4f75cf1ebed9de3c830cebf4948869eb7baca",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "pdf--aefe818d0198aed8",
+      "name": "pdf",
+      "provider": "claude-user",
+      "license": "restricted",
+      "sha256": "aefe818d0198aed87fba89f0b8e9ddfd484f6c3c295fa3b63f2b2e0ab6b1b5c8",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "pptx--e125ebd97c719e3b",
+      "name": "pptx",
+      "provider": "claude-user",
+      "license": "restricted",
+      "sha256": "e125ebd97c719e3bed30bd157c742efb1167530add0e1a1de837572199576580",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "setup-writing-style--93c14774897a23c5",
+      "name": "setup-writing-style",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "93c14774897a23c5672a950c5677078719059c675392acd5ac2fbd367cf08a1d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "skill-creator--3ae7eb78c45966ee",
+      "name": "skill-creator",
+      "provider": "claude-user",
+      "license": "Apache-2.0",
+      "sha256": "3ae7eb78c45966eea8fcd34289fcb069a1b9f4dd772d52eef01d2dcd0f72170b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "xlsx--d1d1453e379bc670",
+      "name": "xlsx",
+      "provider": "claude-user",
+      "license": "restricted",
+      "sha256": "d1d1453e379bc670a9105c640a8d61a4355129edf872a3e76e21154ec233e962",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "unslop--8163972031ff460d",
+      "name": "unslop",
+      "provider": "claude-user",
+      "license": "unresolved",
+      "sha256": "8163972031ff460d914780086ecf891b8bb921a6804d1a6721891b8615fc6b57",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "imagegen--d4cab168a4c410e5",
+      "name": "imagegen",
+      "provider": "codex-user",
+      "license": "Apache-2.0",
+      "sha256": "d4cab168a4c410e58dd45adb10e5d4b1b7ea3eb9137d4692022d5e2cbecc06ec",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "openai-docs--442d7149f9c934e5",
+      "name": "openai-docs",
+      "provider": "codex-user",
+      "license": "Apache-2.0",
+      "sha256": "442d7149f9c934e56514a946d4bca44a6c29fb83324201cf1127d4743f27a247",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "review-agent--bdc744f131949fb3",
+      "name": "review-agent",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "bdc744f131949fb3d7b98a50a13b12aab9750d96f595d6ff58e6d80e3cc82aef",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "skill-creator--a7227d6e272bd9b8",
+      "name": "skill-creator",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "a7227d6e272bd9b80eeee0d643da4a82e2bfd8c9a103b0ca18ca85a01b08aca5",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "skill-installer--911f348e23b25cbf",
+      "name": "skill-installer",
+      "provider": "codex-user",
+      "license": "Apache-2.0",
+      "sha256": "911f348e23b25cbf103c59a7a62e7e6080622caba4b11a28cc33ba7c3e3999c2",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ai--6558b2f0e6a42109",
+      "name": "21st-ai",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "6558b2f0e6a421090ecff65df1de34988037dfbc1a4a093b7108a748eb6f7344",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-cli-use--66a0a0d1578d17f6",
+      "name": "21st-cli-use",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "66a0a0d1578d17f6ec30a7ebe539b75460239bb93fb4211126a1376b9b2a7442",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-design-sync--7eb55c508add96bf",
+      "name": "21st-design-sync",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "7eb55c508add96bff4933cb1daedd308dd7ce677eed235199af3ec0fde5e59d1",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-registry--4856b6ce4a5925e3",
+      "name": "21st-registry",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "4856b6ce4a5925e3056f809b64872e970c644a09694ee62aa0fd325ade8ef25e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ui-build--fd3d0f52650906dd",
+      "name": "21st-ui-build",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "fd3d0f52650906dd711f7dc2c6534521e693593ce7cfc7c0c29eb6a6159ef838",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ui-explore--73e77c3b6fc0af90",
+      "name": "21st-ui-explore",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "73e77c3b6fc0af90a9ecaa3af6db066adf4cc91cefe0309dd664c205645cf82e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ui-review--a4d1bd184b8d47b1",
+      "name": "21st-ui-review",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "a4d1bd184b8d47b169f1aa93444c2e13eb2e50249f346f0ea27792672995ec9e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "ai-image-generator--ff899281b66ca26e",
+      "name": "ai-image-generator",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "ff899281b66ca26ebb406cb42bc0dc38d1f230d40484214f9619127450a8c329",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "animate--a1ca8ca258064eca",
+      "name": "animate",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "a1ca8ca258064ecaa79a63284948187c259f0e7fc54d1e106d334088e2e5c15c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "banner-design--4fcce0dc5a79ea78",
+      "name": "banner-design",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "4fcce0dc5a79ea781a28ac1be4d0bd430b758ced4624df6acf12d1a3abcb1858",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "brainstorming--23f3fea306c2a99e",
+      "name": "brainstorming",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "23f3fea306c2a99ed4ce91387b04075aafda5cc2d466cabf34cac0a5bd646629",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "brand--bb65817b4a42c90d",
+      "name": "brand",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "bb65817b4a42c90ddcb7fb65b229134a67c6c9672665887f88eb381a1b084c5e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "cardboard--c75a8488435778b4",
+      "name": "cardboard",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "c75a8488435778b42ea3c2701d21dab7b7863f2003a17039035892388c3cafb9",
+      "status": "private-snapshot",
+      "metadata_valid": false
+    },
+    {
+      "id": "cavecrew--bf982eb4c11a313d",
+      "name": "cavecrew",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "bf982eb4c11a313d3db103b6be4deaa12894ddc51b2640bce8de8a47ce46e043",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman--c7c814707196525a",
+      "name": "caveman",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "c7c814707196525afc8a3dc3d12d396ee8ded45d3dfdbb6c33737e459db018ad",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-commit--85acc0151e6ed200",
+      "name": "caveman-commit",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "85acc0151e6ed200e3b68b8c91d4d8168653b5af4676a28a33f1eea447b384a7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-compress--5665bbdb9c63df67",
+      "name": "caveman-compress",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "5665bbdb9c63df6732a299f4112dfd53ab74d842d9c96cfb02f4b3e3c496cefe",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-discover--3bc00d2f9ec482cf",
+      "name": "caveman-discover",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "3bc00d2f9ec482cf8906698201284bdcd4dfa678a4237e7d1dda86ed2657e54a",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-evidence-review--2579b766fff248cd",
+      "name": "caveman-evidence-review",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "2579b766fff248cd04ca8d2f3869b3eb3b1e332b5861b8ef4f1365f5be0bef64",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-explore--8680eb06574d06e2",
+      "name": "caveman-explore",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "8680eb06574d06e20d43b578d5b872b89dd471df55dfa377fd4fc1554ef434a9",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-help--76fcddb32d9f9100",
+      "name": "caveman-help",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "76fcddb32d9f91001499f667be02789226a5c89ba2c08b1ec1e4de9f54205168",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-learn--a9d6093ce3ac1257",
+      "name": "caveman-learn",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "a9d6093ce3ac12570d03c14865012d9c93000a9a2984b09a483a1a0935728fa1",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-manage--3bfdd0d186ed59da",
+      "name": "caveman-manage",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "3bfdd0d186ed59daf9e2d1e6a43989b686c0fb4388eeed217104a2e730e06a69",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-optimize--0de85d488f3cf060",
+      "name": "caveman-optimize",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "0de85d488f3cf060bfedb4731dec4a46d09dc74641cb9148d39e5f7353400286",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-review--2f7b1931f172d520",
+      "name": "caveman-review",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "2f7b1931f172d5203dc7e5bf97a65359124050ea10f4b07388ab95d87c8be430",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-setup--1ff2b4a9ec59c2ca",
+      "name": "caveman-setup",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "1ff2b4a9ec59c2cab7f7f5012b0b3d35467e4ccf00d096e5519de8b46dfb6191",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-stats--e5fb441d4d88c1c0",
+      "name": "caveman-stats",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "e5fb441d4d88c1c02f0e43ebb0f0ece58499014ff2cfb4bfaac5caff7287c326",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "citation-management--3f42499c36c42477",
+      "name": "citation-management",
+      "provider": "codex-user",
+      "license": "MIT",
+      "sha256": "3f42499c36c42477fac1cc094e11e3dfa6d125a8f390e004af426503353c3a3b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "claude-md-improver--73d771821a5e3212",
+      "name": "claude-md-improver",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "73d771821a5e3212c12f85ccef28ab7b110f040e25e3a122bf06a12d4c63f6b2",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "codex-cli-runtime--dfa0bbfda08cc5f9",
+      "name": "codex-cli-runtime",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "dfa0bbfda08cc5f9f3f97ce27dacc13ad376f39f07047eb1f0809b3e0bdf4db9",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "codex-result-handling--30118fcd36a9b960",
+      "name": "codex-result-handling",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "30118fcd36a9b9609032bb7fb5dbe0476a974755475064b55baa73b02decc535",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "color-palette--0b81dc53d786c7fc",
+      "name": "color-palette",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "0b81dc53d786c7fc84a90c0a5c12d865a8d543cb8727936661a573791e527a12",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "design--4ede81b8531ea4da",
+      "name": "design",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "4ede81b8531ea4da1b568b14c78fa1ba77a9a63e83162081cad01ad8c1987db3",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "design-system--439add813e1d7426",
+      "name": "design-system",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "439add813e1d7426ae0ad66c0ea87c6aade88b44601da27e9874713763032a0f",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "dispatching-parallel-agents--109dfdd3c8f3b568",
+      "name": "dispatching-parallel-agents",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "109dfdd3c8f3b5687ce710863db2098e7168eb23f81bf48487188166b2b70e5f",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "docs--42754f318cb61a41",
+      "name": "docs",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "42754f318cb61a41a0a5c631ba42f9ae8e012449c20acb28c936e9271ca49f23",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "docx--3ad4a7cae392a368",
+      "name": "docx",
+      "provider": "codex-user",
+      "license": "restricted",
+      "sha256": "3ad4a7cae392a368124c13c75d638af67b682c85285392f90f9bd8d17d9510f7",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "ego-browser--1522ef6138e3928f",
+      "name": "ego-browser",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "1522ef6138e3928f813b97f63e5e0af78584e48c4d1d05cd28ac6e80dd26d605",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "emil-design-eng--775e8bec81e9dc6f",
+      "name": "emil-design-eng",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "775e8bec81e9dc6f01c8d579c0d8367664b99823c635af0ef1a78e1a7ea93749",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "executing-plans--ffb1d303a071634e",
+      "name": "executing-plans",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "ffb1d303a071634ec160eecaa1be46dffbb75de05fade84398c3c2d66392c7ed",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "favicon-gen--2ca0e866b98796f5",
+      "name": "favicon-gen",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "2ca0e866b98796f53b82add00dfcad2927bb0c228d1c76ee30186c640daa7526",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "find-animation-opportunities--1fd208a2b33d4f39",
+      "name": "find-animation-opportunities",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "1fd208a2b33d4f39775949fb8afe56a71f7cddffc8168628d0eee0d2cca8aafe",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "finishing-a-development-branch--ee4dfe69e5e924ea",
+      "name": "finishing-a-development-branch",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "ee4dfe69e5e924ea4eef2ee6458c6bab88d1b586cb1c32d583420c79220e26d6",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "frontend-design--1151cdc3c7bdc300",
+      "name": "frontend-design",
+      "provider": "codex-user",
+      "license": "Apache-2.0",
+      "sha256": "1151cdc3c7bdc300d8cad8738272b606d26420a0e08e568983d2bbe2e903ce0f",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "google-workspace--aa6ae0c5f9af2207",
+      "name": "google-workspace",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "aa6ae0c5f9af220751ccaf42abe494b1fcbb60c4ab6013a31b58922f2005579e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "gpt-5-4-prompting--c6d40ad8af235f45",
+      "name": "gpt-5-4-prompting",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "c6d40ad8af235f45a856e860b2cd788eba678c64bc2127a67d9b78387853f52c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "humanizer--53f1cb76b5ec3d92",
+      "name": "humanizer",
+      "provider": "codex-user",
+      "license": "MIT",
+      "sha256": "53f1cb76b5ec3d9206b5719fd22714524e93d9cd932c329e3dffaa876ddb1beb",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "icon-set-generator--ce78b8869a4f58b3",
+      "name": "icon-set-generator",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "ce78b8869a4f58b3e86927b9ba7897ee53ddb46828aa8b9a2c6d6e1e4b37095b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "image-processing--7859c2321cd4eb73",
+      "name": "image-processing",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "7859c2321cd4eb738fb0f9e0b90fe96f213fcefa614b04ecc6321aa65de1da92",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "impeccable--5c25c911a0e453a7",
+      "name": "impeccable",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "5c25c911a0e453a7e4a9a6afabb0e6374aeb19cda773bcdf0c82e7aa463473ae",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "import-memory--0f9a775246cd8176",
+      "name": "import-memory",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "0f9a775246cd81763a3661b171e54d8deb7732cfd048c9aaa4d4e129ceaa690d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "improve-animations--44de1b5082e5fbe1",
+      "name": "improve-animations",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "44de1b5082e5fbe14ed872b907fc0381301b4885603eb9f8377d293b299cbccf",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "investigate-first--259b7820892a92c1",
+      "name": "investigate-first",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "259b7820892a92c1c7dfab44312e8806fa4d831e8c594b2524896738c116e525",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "lean-build--d3814e190eef283e",
+      "name": "lean-build",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "d3814e190eef283e7c729f30f136d05c2b1d8574f614028797f800d70e8a81f7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "learn--092d454ce301722f",
+      "name": "learn",
+      "provider": "codex-user",
+      "license": "Apache-2.0",
+      "sha256": "092d454ce301722fdaecd64fe86cf9f6e22d3ab1faceb6480ef384d905fda333",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "literature-review--42681ca40e391d21",
+      "name": "literature-review",
+      "provider": "codex-user",
+      "license": "MIT",
+      "sha256": "42681ca40e391d218f17e02fc6f9bb9619ee42efdad364131a01c336b35d0a97",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "migration--181579eecc672677",
+      "name": "migration",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "181579eecc67267729732063e44a96767533b3892ce056c2ee1d4a0da20eb6dd",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "morning--0afab28569c7dbeb",
+      "name": "morning",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "0afab28569c7dbeb79f8922cd2f4f75cf1ebed9de3c830cebf4948869eb7baca",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "patent-novelty-screen--d0f20e15b8cb4329",
+      "name": "patent-novelty-screen",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "d0f20e15b8cb43296d7924f6bfde77ebe2a88af8b3b4df3c5331eb34e6f85b26",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "pdf--aefe818d0198aed8",
+      "name": "pdf",
+      "provider": "codex-user",
+      "license": "restricted",
+      "sha256": "aefe818d0198aed87fba89f0b8e9ddfd484f6c3c295fa3b63f2b2e0ab6b1b5c8",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "pptx--e125ebd97c719e3b",
+      "name": "pptx",
+      "provider": "codex-user",
+      "license": "restricted",
+      "sha256": "e125ebd97c719e3bed30bd157c742efb1167530add0e1a1de837572199576580",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "prompt-master--a22442c8df574fe1",
+      "name": "prompt-master",
+      "provider": "codex-user",
+      "license": "MIT",
+      "sha256": "a22442c8df574fe10cbdd494ce33343d59d9351c9df102e63d7dab647375fa05",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "receiving-code-review--f9c65e2112e2e342",
+      "name": "receiving-code-review",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "f9c65e2112e2e342e2ee2794f6f7c172080b180362196f4e7175a89110d95585",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "requesting-code-review--e4123cca00da08ee",
+      "name": "requesting-code-review",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "e4123cca00da08ee62532bd96c92e1c148f6a1df286d642e0352690327c03522",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research--930573db01db5474",
+      "name": "research",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "930573db01db54747f18012f838fb104c607c837b162be326f7e40940dd5b595",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-add-fields--90b29974d3489375",
+      "name": "research-add-fields",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "90b29974d34893753216c8f31de038737f48f90c0ac4aa9d997006207a35cdaf",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-add-items--66ac4a616ac68e07",
+      "name": "research-add-items",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "66ac4a616ac68e07176a77535d54cb358dbb10f7a7b2643164599ae51c746beb",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-deep--b58c638a5814139d",
+      "name": "research-deep",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "b58c638a5814139da5d6eb262410f0f2cd9a2c0a4446a43a718f480d4d806f78",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "research-report--c092b7fafd80bc44",
+      "name": "research-report",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "c092b7fafd80bc44471e81c91145cc3ea3d18a55e792ef09cc7afc807de8a814",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "safe-refactor--a34c2fc95c2bd107",
+      "name": "safe-refactor",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "a34c2fc95c2bd107f4e9e3526a97910bbf0307b2907f15deda8d226dafead59c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "scientific-brainstorming--00e8cc2cc965396d",
+      "name": "scientific-brainstorming",
+      "provider": "codex-user",
+      "license": "MIT",
+      "sha256": "00e8cc2cc965396d3b899afced48e44f2cb6180b9e08b345499dd314558328c3",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "scientific-critical-thinking--bf715f1917e492f6",
+      "name": "scientific-critical-thinking",
+      "provider": "codex-user",
+      "license": "MIT",
+      "sha256": "bf715f1917e492f659afeca96d9fe388602a68f61c86eb6df1a3880398ab05d0",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "setup-writing-style--93c14774897a23c5",
+      "name": "setup-writing-style",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "93c14774897a23c5672a950c5677078719059c675392acd5ac2fbd367cf08a1d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "skill-creator--3ae7eb78c45966ee",
+      "name": "skill-creator",
+      "provider": "codex-user",
+      "license": "Apache-2.0",
+      "sha256": "3ae7eb78c45966eea8fcd34289fcb069a1b9f4dd772d52eef01d2dcd0f72170b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "slides--441d700bc83d6738",
+      "name": "slides",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "441d700bc83d6738b08bb2baac58894a1076b43df34d1d81b0d6d7d86ecdd6f7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "subagent-driven-development--656b3aeed6970d74",
+      "name": "subagent-driven-development",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "656b3aeed6970d7401d7a86ee01e870ad57aa00e0f04bf476fc1c960c7af3f99",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "surgical-patch--4f7d03689dae2ad0",
+      "name": "surgical-patch",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "4f7d03689dae2ad072fc317e6cc9df47c47a3f071dc328b0dd26e3bad42bc3fd",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "systematic-debugging--3f168c81597bd4c3",
+      "name": "systematic-debugging",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "3f168c81597bd4c35838fa7a3a2898f063d6e45a6e9477ea3778424c8db57fc2",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "test-driven-development--ed6f3c9ca93340ae",
+      "name": "test-driven-development",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "ed6f3c9ca93340ae70e29a585a9a21b2317e4cfb2b7a0c7806a70319449b4cb8",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "ui-styling--428cb7958d29a8c0",
+      "name": "ui-styling",
+      "provider": "codex-user",
+      "license": "Apache-2.0",
+      "sha256": "428cb7958d29a8c074f629c3c353c790381ee1a5b8ec71eef5afe1d7e4fdeac6",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "ui-ux-pro-max--6705fae489883ab6",
+      "name": "ui-ux-pro-max",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "6705fae489883ab69c853398fb6debf54b6a82fef1d9f6ab86af7d957f43200c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "unslop--8163972031ff460d",
+      "name": "unslop",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "8163972031ff460d914780086ecf891b8bb921a6804d1a6721891b8615fc6b57",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "using-git-worktrees--5eae9f789d312993",
+      "name": "using-git-worktrees",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "5eae9f789d3129930eb42029b780947ea93df3980ed3c20f8e89c42257dd5623",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "using-superpowers--ad4cabf82437ce61",
+      "name": "using-superpowers",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "ad4cabf82437ce6171b5a819d797ae3388ec7149fbe69a36f277552c07cb0534",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "verification-before-completion--86165744d985a646",
+      "name": "verification-before-completion",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "86165744d985a646a70f1ea1869f455aa9cb95fcf6b5c368e1781128a0b8e024",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "verify-and-stop--3752e45d6574313d",
+      "name": "verify-and-stop",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "3752e45d6574313d33b56d58ed27b24420f3352f8eeaba76e4914d6517a47d2d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "writing-plans--205203238e56140f",
+      "name": "writing-plans",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "205203238e56140f4ab2a23e766fcb41a2fbb4e19362da5ac91bc8a0ee598a7e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "writing-skills--907cfbc26585467d",
+      "name": "writing-skills",
+      "provider": "codex-user",
+      "license": "unresolved",
+      "sha256": "907cfbc26585467d049561528192d577cc5fb6460c6dacd5c4e120dd092bebc0",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "xlsx--d1d1453e379bc670",
+      "name": "xlsx",
+      "provider": "codex-user",
+      "license": "restricted",
+      "sha256": "d1d1453e379bc670a9105c640a8d61a4355129edf872a3e76e21154ec233e962",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "cardboard--c75a8488435778b4",
+      "name": "cardboard",
+      "provider": "shared-agent",
+      "license": "unresolved",
+      "sha256": "c75a8488435778b42ea3c2701d21dab7b7863f2003a17039035892388c3cafb9",
+      "status": "private-snapshot",
+      "metadata_valid": false
+    },
+    {
+      "id": "ego-browser--1522ef6138e3928f",
+      "name": "ego-browser",
+      "provider": "shared-agent",
+      "license": "unresolved",
+      "sha256": "1522ef6138e3928f813b97f63e5e0af78584e48c4d1d05cd28ac6e80dd26d605",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ai--6558b2f0e6a42109",
+      "name": "21st-ai",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "6558b2f0e6a421090ecff65df1de34988037dfbc1a4a093b7108a748eb6f7344",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-cli-use--66a0a0d1578d17f6",
+      "name": "21st-cli-use",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "66a0a0d1578d17f6ec30a7ebe539b75460239bb93fb4211126a1376b9b2a7442",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-design-sync--7eb55c508add96bf",
+      "name": "21st-design-sync",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "7eb55c508add96bff4933cb1daedd308dd7ce677eed235199af3ec0fde5e59d1",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-registry--4856b6ce4a5925e3",
+      "name": "21st-registry",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "4856b6ce4a5925e3056f809b64872e970c644a09694ee62aa0fd325ade8ef25e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ui-build--fd3d0f52650906dd",
+      "name": "21st-ui-build",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "fd3d0f52650906dd711f7dc2c6534521e693593ce7cfc7c0c29eb6a6159ef838",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ui-explore--73e77c3b6fc0af90",
+      "name": "21st-ui-explore",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "73e77c3b6fc0af90a9ecaa3af6db066adf4cc91cefe0309dd664c205645cf82e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "21st-ui-review--a4d1bd184b8d47b1",
+      "name": "21st-ui-review",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "a4d1bd184b8d47b169f1aa93444c2e13eb2e50249f346f0ea27792672995ec9e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "cavecrew--6cff142a9bbaa5a3",
+      "name": "cavecrew",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "6cff142a9bbaa5a3ccf68fe2ab0b1d013d8d489ebdae2e42177a0115a9467d0e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman--6997d66f3ed55cc1",
+      "name": "caveman",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "6997d66f3ed55cc1de4bebe37c83c41715cb266219232a23ee84a4049d81383e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-compress--b59a5203552d790e",
+      "name": "caveman-compress",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "b59a5203552d790e15c38c2728f43ff87e79d51f181a60af6160edaefcbd4478",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-stats--b2c458f24b5183de",
+      "name": "caveman-stats",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "b2c458f24b5183de425d60756e17389a40a84fa18476bd59c2cc2c0d23687b82",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "cavecrew--bf982eb4c11a313d",
+      "name": "cavecrew",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "bf982eb4c11a313d3db103b6be4deaa12894ddc51b2640bce8de8a47ce46e043",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman--c7c814707196525a",
+      "name": "caveman",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "c7c814707196525afc8a3dc3d12d396ee8ded45d3dfdbb6c33737e459db018ad",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-commit--85acc0151e6ed200",
+      "name": "caveman-commit",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "85acc0151e6ed200e3b68b8c91d4d8168653b5af4676a28a33f1eea447b384a7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-compress--5665bbdb9c63df67",
+      "name": "caveman-compress",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "5665bbdb9c63df6732a299f4112dfd53ab74d842d9c96cfb02f4b3e3c496cefe",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-discover--3bc00d2f9ec482cf",
+      "name": "caveman-discover",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "3bc00d2f9ec482cf8906698201284bdcd4dfa678a4237e7d1dda86ed2657e54a",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-evidence-review--2579b766fff248cd",
+      "name": "caveman-evidence-review",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "2579b766fff248cd04ca8d2f3869b3eb3b1e332b5861b8ef4f1365f5be0bef64",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-explore--8680eb06574d06e2",
+      "name": "caveman-explore",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "8680eb06574d06e20d43b578d5b872b89dd471df55dfa377fd4fc1554ef434a9",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-help--76fcddb32d9f9100",
+      "name": "caveman-help",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "76fcddb32d9f91001499f667be02789226a5c89ba2c08b1ec1e4de9f54205168",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-learn--a9d6093ce3ac1257",
+      "name": "caveman-learn",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "a9d6093ce3ac12570d03c14865012d9c93000a9a2984b09a483a1a0935728fa1",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-manage--3bfdd0d186ed59da",
+      "name": "caveman-manage",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "3bfdd0d186ed59daf9e2d1e6a43989b686c0fb4388eeed217104a2e730e06a69",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-optimize--0de85d488f3cf060",
+      "name": "caveman-optimize",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "0de85d488f3cf060bfedb4731dec4a46d09dc74641cb9148d39e5f7353400286",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-review--2f7b1931f172d520",
+      "name": "caveman-review",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "2f7b1931f172d5203dc7e5bf97a65359124050ea10f4b07388ab95d87c8be430",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-setup--1ff2b4a9ec59c2ca",
+      "name": "caveman-setup",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "1ff2b4a9ec59c2cab7f7f5012b0b3d35467e4ccf00d096e5519de8b46dfb6191",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "caveman-stats--e5fb441d4d88c1c0",
+      "name": "caveman-stats",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "e5fb441d4d88c1c02f0e43ebb0f0ece58499014ff2cfb4bfaac5caff7287c326",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "investigate-first--259b7820892a92c1",
+      "name": "investigate-first",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "259b7820892a92c1c7dfab44312e8806fa4d831e8c594b2524896738c116e525",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "lean-build--d3814e190eef283e",
+      "name": "lean-build",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "d3814e190eef283e7c729f30f136d05c2b1d8574f614028797f800d70e8a81f7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "migration--181579eecc672677",
+      "name": "migration",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "181579eecc67267729732063e44a96767533b3892ce056c2ee1d4a0da20eb6dd",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "safe-refactor--a34c2fc95c2bd107",
+      "name": "safe-refactor",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "a34c2fc95c2bd107f4e9e3526a97910bbf0307b2907f15deda8d226dafead59c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "surgical-patch--4f7d03689dae2ad0",
+      "name": "surgical-patch",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "4f7d03689dae2ad072fc317e6cc9df47c47a3f071dc328b0dd26e3bad42bc3fd",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "verify-and-stop--3752e45d6574313d",
+      "name": "verify-and-stop",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "3752e45d6574313d33b56d58ed27b24420f3352f8eeaba76e4914d6517a47d2d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "claude-md-improver--73d771821a5e3212",
+      "name": "claude-md-improver",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "73d771821a5e3212c12f85ccef28ab7b110f040e25e3a122bf06a12d4c63f6b2",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "frontend-design--1151cdc3c7bdc300",
+      "name": "frontend-design",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "1151cdc3c7bdc300d8cad8738272b606d26420a0e08e568983d2bbe2e903ce0f",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "brainstorming--23f3fea306c2a99e",
+      "name": "brainstorming",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "23f3fea306c2a99ed4ce91387b04075aafda5cc2d466cabf34cac0a5bd646629",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "dispatching-parallel-agents--109dfdd3c8f3b568",
+      "name": "dispatching-parallel-agents",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "109dfdd3c8f3b5687ce710863db2098e7168eb23f81bf48487188166b2b70e5f",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "executing-plans--ffb1d303a071634e",
+      "name": "executing-plans",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "ffb1d303a071634ec160eecaa1be46dffbb75de05fade84398c3c2d66392c7ed",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "finishing-a-development-branch--ee4dfe69e5e924ea",
+      "name": "finishing-a-development-branch",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "ee4dfe69e5e924ea4eef2ee6458c6bab88d1b586cb1c32d583420c79220e26d6",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "receiving-code-review--f9c65e2112e2e342",
+      "name": "receiving-code-review",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "f9c65e2112e2e342e2ee2794f6f7c172080b180362196f4e7175a89110d95585",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "requesting-code-review--e4123cca00da08ee",
+      "name": "requesting-code-review",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "e4123cca00da08ee62532bd96c92e1c148f6a1df286d642e0352690327c03522",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "subagent-driven-development--656b3aeed6970d74",
+      "name": "subagent-driven-development",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "656b3aeed6970d7401d7a86ee01e870ad57aa00e0f04bf476fc1c960c7af3f99",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "systematic-debugging--3f168c81597bd4c3",
+      "name": "systematic-debugging",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "3f168c81597bd4c35838fa7a3a2898f063d6e45a6e9477ea3778424c8db57fc2",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "test-driven-development--ed6f3c9ca93340ae",
+      "name": "test-driven-development",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "ed6f3c9ca93340ae70e29a585a9a21b2317e4cfb2b7a0c7806a70319449b4cb8",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "using-git-worktrees--5eae9f789d312993",
+      "name": "using-git-worktrees",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "5eae9f789d3129930eb42029b780947ea93df3980ed3c20f8e89c42257dd5623",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "using-superpowers--ad4cabf82437ce61",
+      "name": "using-superpowers",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "ad4cabf82437ce6171b5a819d797ae3388ec7149fbe69a36f277552c07cb0534",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "verification-before-completion--86165744d985a646",
+      "name": "verification-before-completion",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "86165744d985a646a70f1ea1869f455aa9cb95fcf6b5c368e1781128a0b8e024",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "writing-plans--205203238e56140f",
+      "name": "writing-plans",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "205203238e56140f4ab2a23e766fcb41a2fbb4e19362da5ac91bc8a0ee598a7e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "writing-skills--907cfbc26585467d",
+      "name": "writing-skills",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "907cfbc26585467d049561528192d577cc5fb6460c6dacd5c4e120dd092bebc0",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "ai-image-generator--ff899281b66ca26e",
+      "name": "ai-image-generator",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "ff899281b66ca26ebb406cb42bc0dc38d1f230d40484214f9619127450a8c329",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "color-palette--0b81dc53d786c7fc",
+      "name": "color-palette",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "0b81dc53d786c7fc84a90c0a5c12d865a8d543cb8727936661a573791e527a12",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "favicon-gen--2ca0e866b98796f5",
+      "name": "favicon-gen",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "2ca0e866b98796f53b82add00dfcad2927bb0c228d1c76ee30186c640daa7526",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "icon-set-generator--ce78b8869a4f58b3",
+      "name": "icon-set-generator",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "ce78b8869a4f58b3e86927b9ba7897ee53ddb46828aa8b9a2c6d6e1e4b37095b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "image-processing--7859c2321cd4eb73",
+      "name": "image-processing",
+      "provider": "claude-plugin-cache",
+      "license": "unresolved",
+      "sha256": "7859c2321cd4eb738fb0f9e0b90fe96f213fcefa614b04ecc6321aa65de1da92",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "codex-cli-runtime--dfa0bbfda08cc5f9",
+      "name": "codex-cli-runtime",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "dfa0bbfda08cc5f9f3f97ce27dacc13ad376f39f07047eb1f0809b3e0bdf4db9",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "codex-result-handling--30118fcd36a9b960",
+      "name": "codex-result-handling",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "30118fcd36a9b9609032bb7fb5dbe0476a974755475064b55baa73b02decc535",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "gpt-5-4-prompting--c6d40ad8af235f45",
+      "name": "gpt-5-4-prompting",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "c6d40ad8af235f45a856e860b2cd788eba678c64bc2127a67d9b78387853f52c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "banner-design--4fcce0dc5a79ea78",
+      "name": "banner-design",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "4fcce0dc5a79ea781a28ac1be4d0bd430b758ced4624df6acf12d1a3abcb1858",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "brand--bb65817b4a42c90d",
+      "name": "brand",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "bb65817b4a42c90ddcb7fb65b229134a67c6c9672665887f88eb381a1b084c5e",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "design--4ede81b8531ea4da",
+      "name": "design",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "4ede81b8531ea4da1b568b14c78fa1ba77a9a63e83162081cad01ad8c1987db3",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "design-system--439add813e1d7426",
+      "name": "design-system",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "439add813e1d7426ae0ad66c0ea87c6aade88b44601da27e9874713763032a0f",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "slides--441d700bc83d6738",
+      "name": "slides",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "441d700bc83d6738b08bb2baac58894a1076b43df34d1d81b0d6d7d86ecdd6f7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "ui-styling--428cb7958d29a8c0",
+      "name": "ui-styling",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "428cb7958d29a8c074f629c3c353c790381ee1a5b8ec71eef5afe1d7e4fdeac6",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "ui-ux-pro-max--6705fae489883ab6",
+      "name": "ui-ux-pro-max",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "6705fae489883ab69c853398fb6debf54b6a82fef1d9f6ab86af7d957f43200c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "banner-design--4fcce0dc5a79ea78",
+      "name": "banner-design",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "4fcce0dc5a79ea781a28ac1be4d0bd430b758ced4624df6acf12d1a3abcb1858",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "brand--791bb18e4e5de28f",
+      "name": "brand",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "791bb18e4e5de28fb373037db61349bf45ebfa966a484bb2bed78f9c31b5bfde",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "design--4ede81b8531ea4da",
+      "name": "design",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "4ede81b8531ea4da1b568b14c78fa1ba77a9a63e83162081cad01ad8c1987db3",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "design-system--21a5e4923802e5ea",
+      "name": "design-system",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "21a5e4923802e5eaace0e1512ad6a2950dc3e892cd30edaadac60db9a167536d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "slides--441d700bc83d6738",
+      "name": "slides",
+      "provider": "claude-plugin-cache",
+      "license": "MIT",
+      "sha256": "441d700bc83d6738b08bb2baac58894a1076b43df34d1d81b0d6d7d86ecdd6f7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "ui-styling--c35f45d07b11461d",
+      "name": "ui-styling",
+      "provider": "claude-plugin-cache",
+      "license": "Apache-2.0",
+      "sha256": "c35f45d07b11461d0c596038a9ff529a9aabee7587c8e296ab832584c1023ab2",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "visualize--5e0038c78c7759c6",
+      "name": "visualize",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "5e0038c78c7759c62aa8df09d5a7c718d0d6daeb6b7ab951fd2e0f74bf16e7c8",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-analytics-dashboard--9ee973ad74dcf857",
+      "name": "artifact-template-analytics-dashboard",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "9ee973ad74dcf8574135cf482bfb9bba5798b8f65c4a52bdfd971d4be63b0a65",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-business-review--00d41c838a148bb0",
+      "name": "artifact-template-business-review",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "00d41c838a148bb054b7ecbd4d4f812c77817fc5b7f3c06f47a39acee2a4e4c5",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-design-report--9d96a113b3e59d3f",
+      "name": "artifact-template-design-report",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "9d96a113b3e59d3f432388ef6447ae9a848d30b9f788f23c7b64f84f7ddad3c9",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-experiment-analysis--cddb06fd0ebea154",
+      "name": "artifact-template-experiment-analysis",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "cddb06fd0ebea1543d32fad0c7404719f235952e7abe3cf6feaadd6baac53108",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-financial-budget--f741e15b36004c11",
+      "name": "artifact-template-financial-budget",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "f741e15b36004c1159e610e75caaec06fdc8d72669127985a554aa58b7f41ae1",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-investment-committee-memo--36f1fe445238e968",
+      "name": "artifact-template-investment-committee-memo",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "36f1fe445238e968cbc9568bb0532b24f08b5eb688ada7f58e3043a50fa28680",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-legal-memorandum--67ab8ea218bc4e8b",
+      "name": "artifact-template-legal-memorandum",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "67ab8ea218bc4e8be1f025fb0855b1675df9229fa030f55a8cf009ab4df0e704",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-market-trends-report--568a7070489f643c",
+      "name": "artifact-template-market-trends-report",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "568a7070489f643cddecbc1fa74c69c42c073addc578b870c8e63b8dce492dd0",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-minimal-letterhead--fa608cc65f6fa7de",
+      "name": "artifact-template-minimal-letterhead",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "fa608cc65f6fa7de104b1dddecb158f470680699d247b98f3cc7be797145a929",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-operating-calendar--bb86613520751da3",
+      "name": "artifact-template-operating-calendar",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "bb86613520751da31e26290f1e919e3d7403d55e88a8b234fd7d07f784a49d16",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-operating-review--7cc7720fe551d9f6",
+      "name": "artifact-template-operating-review",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "7cc7720fe551d9f6e776d67173db7f335ca12fdb43759ef18085115e03bc60a5",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-project-kickoff--aa1889c143c7d46d",
+      "name": "artifact-template-project-kickoff",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "aa1889c143c7d46d225068a831b48bc45cee655cb9902be220741892cd559392",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-project-tracker--38d541746ef0e89f",
+      "name": "artifact-template-project-tracker",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "38d541746ef0e89f92ae0f40ac02a9f715819ee8dbee1ade3b9bfd7c41604e2d",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-sales-pipeline--cfaae231c04e98ae",
+      "name": "artifact-template-sales-pipeline",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "cfaae231c04e98aeebdf779304ae46d7a73fb6448109ddae15f3b38e29da29dd",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-simple-dark-mode--c5a471b149d59ee1",
+      "name": "artifact-template-simple-dark-mode",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "c5a471b149d59ee1c95f2145a83a7a7ca238904274e2d534bc8c092f08dc27c5",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-simple-light-mode--7201c76dcf6c7c82",
+      "name": "artifact-template-simple-light-mode",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "7201c76dcf6c7c82a419f4132597c37879fb15e5a9ecb27d74d3d1bb03506984",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-strategy-memorandum--681b7746ef5bbda2",
+      "name": "artifact-template-strategy-memorandum",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "681b7746ef5bbda2dccdd45c9a49149420b2bc06102f8ec1df4d8bdc6acc5c92",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-system-design--b5145c64d04ebc14",
+      "name": "artifact-template-system-design",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "b5145c64d04ebc14f1aa4d25efdd31297f8f038c2e78f69441b922b108b1044f",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-team-alignment--bae4769efe9e8b31",
+      "name": "artifact-template-team-alignment",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "bae4769efe9e8b3181b412988a666ff5e0afba42500a2890b39744986557391b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "artifact-template-three-statement-forecast--268d4c4b7d95e399",
+      "name": "artifact-template-three-statement-forecast",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "268d4c4b7d95e399d8cccfa1629223d254f4bd12ef467fb37cc986d4d5294018",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "plugin-management--0aec5894759ee21b",
+      "name": "plugin-management",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "0aec5894759ee21bd52cc7a6ffb581666dcaa2529a3858ddc499efc77bff9c63",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "sites-building--07665eb622bdf5c2",
+      "name": "sites-building",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "07665eb622bdf5c2f1f08c1a78ef4398ed4f2b623e141e0dbbfd10e568442a28",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "sites-hosting--b060ccb13b391bec",
+      "name": "sites-hosting",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "b060ccb13b391becefde06d91accd834737000385709356644204faa9cc4ca42",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "sites-mcp--f48a88cf141abb4d",
+      "name": "sites-mcp",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "f48a88cf141abb4d7a77701aa1456a000ac293b1f2f64e799527e4553b638826",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "sites-preview-troubleshooting--254f695eb4b96a07",
+      "name": "sites-preview-troubleshooting",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "254f695eb4b96a07c3a773a88758e08822bfb84f731bb4a58d4e033c295eaa00",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "create-pet--ea550dc606a2d1d1",
+      "name": "create-pet",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "ea550dc606a2d1d14a9438281a6d6162c98993ba88e03a015a6f8437fb60de80",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "pets--ed348b2d255475f2",
+      "name": "pets",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "ed348b2d255475f2ad1dccb0aa5a593137f2d35eedbf46812a455500dda419f0",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "update-pet--906dfbaa2c4d8fe9",
+      "name": "update-pet",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "906dfbaa2c4d8fe999a1391c696d5d5bd2555cbcc1a6689acd00d079c5f4596c",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "documents--f2c3ee34a1938d54",
+      "name": "documents",
+      "provider": "openai-plugin-cache",
+      "license": "restricted",
+      "sha256": "f2c3ee34a1938d541de4d9dbfa9175dea018b8830d4f238ccc271a06bc610929",
+      "status": "reference-only-restricted",
+      "metadata_valid": true
+    },
+    {
+      "id": "pdf--ffb86555562f15af",
+      "name": "pdf",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "ffb86555562f15afab908e3e56a2cf2012e3a8f655c6fefb3549457f52bc7b4b",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "presentations--691ec2d95fa201c4",
+      "name": "Presentations",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "691ec2d95fa201c410428d51c35d4e9e0dad711985c59d7d0fa21d10b6d3c0a6",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "excel-live-control--7caeaad9c4f1ebce",
+      "name": "excel-live-control",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "7caeaad9c4f1ebce1a411d5e6d0afb28547aa824eb9d3ed36b92e557a61616c7",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "spreadsheets--c0d7b69868c0b18a",
+      "name": "Spreadsheets",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "c0d7b69868c0b18a4d7e48eb09ef7be5aa07249fddaac55dd367a72c706b0c23",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    },
+    {
+      "id": "template-creator--72f47944aef69476",
+      "name": "template-creator",
+      "provider": "openai-plugin-cache",
+      "license": "unresolved",
+      "sha256": "72f47944aef69476e00ba0b24d3acb0e6d421da80211e961a3e6d67891d398be",
+      "status": "private-snapshot",
+      "metadata_valid": true
+    }
+  ],
+  "error_count": 0,
+  "metadata_warning_count": 3
+}

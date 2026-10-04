@@ -1,0 +1,116 @@
+{
+  "same_name_local_variants": [
+    {
+      "name": "brand",
+      "variants": 2,
+      "providers": [
+        "claude-plugin-cache",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "cavecrew",
+      "variants": 2,
+      "providers": [
+        "claude-plugin-cache",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "caveman",
+      "variants": 2,
+      "providers": [
+        "claude-plugin-cache",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "caveman-compress",
+      "variants": 2,
+      "providers": [
+        "claude-plugin-cache",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "caveman-stats",
+      "variants": 2,
+      "providers": [
+        "claude-plugin-cache",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "design-system",
+      "variants": 2,
+      "providers": [
+        "claude-plugin-cache",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "pdf",
+      "variants": 2,
+      "providers": [
+        "claude-user",
+        "codex-user",
+        "openai-plugin-cache"
+      ]
+    },
+    {
+      "name": "prompt-master",
+      "variants": 2,
+      "providers": [
+        "claude-user",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "research",
+      "variants": 2,
+      "providers": [
+        "claude-user",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "skill-creator",
+      "variants": 2,
+      "providers": [
+        "claude-user",
+        "codex-user"
+      ]
+    },
+    {
+      "name": "ui-styling",
+      "variants": 2,
+      "providers": [
+        "claude-plugin-cache",
+        "codex-user"
+      ]
+    }
+  ],
+  "public_names_already_local": [
+    "brainstorming",
+    "citation-management",
+    "dispatching-parallel-agents",
+    "executing-plans",
+    "finishing-a-development-branch",
+    "frontend-design",
+    "literature-review",
+    "receiving-code-review",
+    "requesting-code-review",
+    "scientific-brainstorming",
+    "scientific-critical-thinking",
+    "skill-creator",
+    "subagent-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "using-git-worktrees",
+    "using-superpowers",
+    "verification-before-completion",
+    "writing-plans",
+    "writing-skills"
+  ],
+  "policy": "Do not overwrite local customizations. Choose one version per name for installation."
+}

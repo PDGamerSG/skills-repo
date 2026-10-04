@@ -1,0 +1,120 @@
+{
+  "anthropics/skills": {
+    "category": "documents-design",
+    "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned.",
+    "skills": {
+      "frontend-design": "Intentional UI direction, typography, and subject-specific design guidance.",
+      "webapp-testing": "Local browser verification with server lifecycle examples.",
+      "mcp-builder": "Structured MCP tool design, implementation, and evaluation workflow.",
+      "skill-creator": "Skill authoring with activation and output evaluation resources.",
+      "claude-api": "Vendor-maintained Claude API and SDK development guidance.",
+      "internal-comms": "Progress updates, incident reports, and organizational communication examples.",
+      "brand-guidelines": "Concrete typography and brand reference; Anthropic branding needs adaptation.",
+      "theme-factory": "Reusable themes and consistent presentation styling.",
+      "canvas-design": "Poster and visual composition workflow with bundled fonts.",
+      "algorithmic-art": "Generative art workflow with reusable HTML templates.",
+      "slack-gif-creator": "Animation utilities and Slack-oriented GIF constraints.",
+      "web-artifacts-builder": "Interactive artifact creation and bundling instructions."
+    }
+  },
+  "obra/superpowers": {
+    "category": "coding-workflow",
+    "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in.",
+    "skills": {
+      "brainstorming": "Clarify requirements and design before implementation.",
+      "systematic-debugging": "Establish and test a cause before changing code.",
+      "test-driven-development": "Development workflow based on failing and passing behavior tests.",
+      "verification-before-completion": "Demand fresh verification evidence before declaring completion.",
+      "writing-plans": "Break implementation into reviewable tasks and checks.",
+      "executing-plans": "Carry out a previously reviewed implementation plan.",
+      "requesting-code-review": "Request focused review with context and verification evidence.",
+      "receiving-code-review": "Evaluate review feedback before implementing it.",
+      "using-git-worktrees": "Isolate development with Git worktrees.",
+      "finishing-a-development-branch": "Verification and branch completion workflow.",
+      "writing-skills": "Develop and evaluate reusable agent instructions.",
+      "subagent-driven-development": "Optional delegated implementation workflow.",
+      "dispatching-parallel-agents": "Optional delegation of independent investigations.",
+      "using-superpowers": "Opt-in framework activation and general skill-selection behavior.",
+      "diagnosing-superpowers": "Diagnose framework installation and invocation issues."
+    }
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "category": "research-data",
+    "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested.",
+    "skills": {
+      "literature-review": "Reproducible searching, screening, synthesis, and coverage limitations.",
+      "citation-management": "Citation metadata checks, DOI workflows, and bibliography scripts.",
+      "scientific-critical-thinking": "Evidence appraisal, confounding, bias, and inference limits.",
+      "scientific-brainstorming": "Structured research ideation and evaluation.",
+      "peer-review": "Structured manuscript appraisal and review preparation.",
+      "statistical-analysis": "Assumption checks, effect sizes, power, and transparent reporting.",
+      "experimental-design": "Design selection, randomization, factorial design, and pseudoreplication checks.",
+      "hypothesis-generation": "Evidence-grounded hypotheses and discriminating predictions.",
+      "exploratory-data-analysis": "Format-aware inspection and data quality reporting.",
+      "scientific-visualization": "Figure meaning, uncertainty, accessibility, export, and verification.",
+      "matplotlib": "Programmatic plotting reference and export patterns.",
+      "seaborn": "Statistical plots and visualization patterns.",
+      "statsmodels": "Statistical estimation, diagnostics, and model workflows.",
+      "polars": "Efficient dataframe transformations.",
+      "sympy": "Symbolic algebra and mathematical computation.",
+      "uncertainty-and-units": "Dimensions, units, and propagated uncertainty.",
+      "markitdown": "Convert office files and other documents to Markdown for analysis.",
+      "scientific-writing": "Evidence-led scientific writing and manuscript structure.",
+      "scientific-slides": "Research presentation design and slide preparation.",
+      "pptx-posters": "PowerPoint-oriented scientific poster workflow.",
+      "research-grants": "Structured research proposal and grant writing."
+    }
+  },
+  "trailofbits/skills": {
+    "category": "security-quality",
+    "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles.",
+    "skills": {
+      "differential-review": "Security review of changes with history, impact scope, and evidence.",
+      "property-based-testing": "Invariants, oracles, shrinking, and selection of useful properties.",
+      "sharp-edges": "API and configuration designs that enable security mistakes.",
+      "audit-context-building": "Build system context before vulnerability conclusions.",
+      "variant-analysis": "Search for related patterns after a confirmed issue.",
+      "modern-python": "Modern Python project and toolchain conventions.",
+      "supply-chain-risk-auditor": "Dependency and maintainer risk review.",
+      "semgrep": "Semgrep static analysis and finding triage."
+    }
+  },
+  "supabase/agent-skills": {
+    "category": "database",
+    "prerequisites": "Postgres/Supabase project; database CLI or connected Supabase MCP for live actions. Import grants no database access.",
+    "skills": {
+      "supabase-postgres-best-practices": "Postgres queries, schema, connections, migrations, security, and indexes.",
+      "supabase": "Supabase-specific backend and operational workflows."
+    }
+  },
+  "huggingface/skills": {
+    "category": "machine-learning",
+    "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges.",
+    "skills": {
+      "huggingface-datasets": "Read-only Dataset Viewer pagination, filtering, metadata, and parquet.",
+      "huggingface-community-evals": "Local evaluation with inspect-ai/lighteval and explicit backend requirements.",
+      "huggingface-local-models": "Local model setup and quantization guidance.",
+      "huggingface-gradio": "Gradio components, events, and interaction patterns.",
+      "huggingface-trackio": "ML experiment tracking workflows.",
+      "huggingface-papers": "Hub paper discovery and management, distinct from systematic review.",
+      "hf-cli": "Official Hub CLI reference; account writes require task-specific authorization."
+    }
+  },
+  "openai/plugins": {
+    "category": "productivity-platform",
+    "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled.",
+    "skills": {
+      "plugins/openai-developers/skills/build-chatgpt-app": "Current Apps SDK scaffolding and docs-first MCP/widget workflow.",
+      "plugins/openai-developers/skills/chatgpt-app-submission": "ChatGPT app submission requirements and preparation.",
+      "plugins/cloudflare/skills/cloudflare": "Retrieval-oriented Cloudflare platform guide.",
+      "plugins/cloudflare/skills/wrangler": "Cloudflare CLI configuration and local development reference.",
+      "plugins/cloudflare/skills/agents-sdk": "Cloudflare Agents SDK patterns; distinct from OpenAI Agents SDK.",
+      "plugins/sentry/skills/sentry": "Read-only production issue inspection with a bundled API client.",
+      "plugins/notion/skills/notion-research-documentation": "Source-linked synthesis of connected Notion pages.",
+      "plugins/notion/skills/notion-knowledge-capture": "Capture notes and decisions as structured Notion content.",
+      "plugins/notion/skills/notion-meeting-intelligence": "Meeting preparation from connected workspace context.",
+      "plugins/notion/skills/notion-spec-to-implementation": "Translate workspace requirements into plans and tasks.",
+      "plugins/test-android-apps/skills/android-emulator-qa": "Emulator-based app inspection and QA procedures."
+    }
+  }
+}

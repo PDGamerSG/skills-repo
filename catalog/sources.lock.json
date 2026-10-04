@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "researched_on": "2026-10-05",
+  "timezone": "Asia/Kolkata",
+  "sources": [
+    {
+      "id": "anthropics",
+      "repo": "anthropics/skills",
+      "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+      "commit_date": "2026-09-28T19:20:03-07:00",
+      "selected": [
+        {
+          "path": "skills/frontend-design",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Intentional UI direction, typography, and subject-specific design guidance.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/webapp-testing",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Local browser verification with server lifecycle examples.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/mcp-builder",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Structured MCP tool design, implementation, and evaluation workflow.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/skill-creator",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Skill authoring with activation and output evaluation resources.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/claude-api",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Vendor-maintained Claude API and SDK development guidance.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/internal-comms",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Progress updates, incident reports, and organizational communication examples.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/brand-guidelines",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Concrete typography and brand reference; Anthropic branding needs adaptation.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/theme-factory",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Reusable themes and consistent presentation styling.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/canvas-design",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Poster and visual composition workflow with bundled fonts.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/algorithmic-art",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Generative art workflow with reusable HTML templates.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/slack-gif-creator",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Animation utilities and Slack-oriented GIF constraints.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        },
+        {
+          "path": "skills/web-artifacts-builder",
+          "category": "documents-design",
+          "license": "Apache-2.0",
+          "reason": "Interactive artifact creation and bundling instructions.",
+          "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned."
+        }
+      ]
+    },
+    {
+      "id": "obra",
+      "repo": "obra/superpowers",
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "commit_date": "2026-09-25T11:06:27-07:00",
+      "selected": [
+        {
+          "path": "skills/brainstorming",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Clarify requirements and design before implementation.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/systematic-debugging",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Establish and test a cause before changing code.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/test-driven-development",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Development workflow based on failing and passing behavior tests.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/verification-before-completion",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Demand fresh verification evidence before declaring completion.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/writing-plans",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Break implementation into reviewable tasks and checks.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/executing-plans",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Carry out a previously reviewed implementation plan.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/requesting-code-review",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Request focused review with context and verification evidence.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/receiving-code-review",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Evaluate review feedback before implementing it.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/using-git-worktrees",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Isolate development with Git worktrees.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/finishing-a-development-branch",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Verification and branch completion workflow.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/writing-skills",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Develop and evaluate reusable agent instructions.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/subagent-driven-development",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Optional delegated implementation workflow.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/dispatching-parallel-agents",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Optional delegation of independent investigations.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/using-superpowers",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Opt-in framework activation and general skill-selection behavior.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        },
+        {
+          "path": "skills/diagnosing-superpowers",
+          "category": "coding-workflow",
+          "license": "MIT",
+          "reason": "Diagnose framework installation and invocation issues.",
+          "prerequisites": "Git and coding/test tools; delegation skills require compatible subagent APIs. Framework-level activation is opt-in."
+        }
+      ]
+    },
+    {
+      "id": "k-dense",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
+      "commit_date": "2026-10-01T15:42:40-07:00",
+      "selected": [
+        {
+          "path": "skills/literature-review",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Reproducible searching, screening, synthesis, and coverage limitations.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/citation-management",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Citation metadata checks, DOI workflows, and bibliography scripts.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/scientific-critical-thinking",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Evidence appraisal, confounding, bias, and inference limits.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/scientific-brainstorming",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Structured research ideation and evaluation.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/peer-review",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Structured manuscript appraisal and review preparation.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/statistical-analysis",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Assumption checks, effect sizes, power, and transparent reporting.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/experimental-design",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Design selection, randomization, factorial design, and pseudoreplication checks.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/hypothesis-generation",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Evidence-grounded hypotheses and discriminating predictions.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/exploratory-data-analysis",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Format-aware inspection and data quality reporting.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/scientific-visualization",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Figure meaning, uncertainty, accessibility, export, and verification.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/matplotlib",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Programmatic plotting reference and export patterns.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/seaborn",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Statistical plots and visualization patterns.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/statsmodels",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Statistical estimation, diagnostics, and model workflows.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/polars",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Efficient dataframe transformations.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/sympy",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Symbolic algebra and mathematical computation.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/uncertainty-and-units",
+          "category": "research-data",
+          "license": "MIT",
+          "reason": "Dimensions, units, and propagated uncertainty.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/markitdown",
+          "category": "documents-productivity",
+          "license": "MIT",
+          "reason": "Convert office files and other documents to Markdown for analysis.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/scientific-writing",
+          "category": "documents-productivity",
+          "license": "MIT",
+          "reason": "Evidence-led scientific writing and manuscript structure.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/scientific-slides",
+          "category": "documents-productivity",
+          "license": "MIT",
+          "reason": "Research presentation design and slide preparation.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/pptx-posters",
+          "category": "documents-productivity",
+          "license": "MIT",
+          "reason": "PowerPoint-oriented scientific poster workflow.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        },
+        {
+          "path": "skills/research-grants",
+          "category": "documents-productivity",
+          "license": "MIT",
+          "reason": "Structured research proposal and grant writing.",
+          "prerequisites": "Skill-specific scientific Python packages; some require Python 3.12+. Optional search, figures, and exports may require third-party keys, sibling skills, Pandoc/XeLaTeX. Runtime not tested."
+        }
+      ]
+    },
+    {
+      "id": "trailofbits",
+      "repo": "trailofbits/skills",
+      "commit": "82fe8226252622fa807643bdca1710901198553a",
+      "commit_date": "2026-09-28T14:06:37-04:00",
+      "selected": [
+        {
+          "path": "plugins/differential-review/skills/differential-review",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "Security review of changes with history, impact scope, and evidence.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        },
+        {
+          "path": "plugins/property-based-testing/skills/property-based-testing",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "Invariants, oracles, shrinking, and selection of useful properties.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        },
+        {
+          "path": "plugins/sharp-edges/skills/sharp-edges",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "API and configuration designs that enable security mistakes.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        },
+        {
+          "path": "plugins/audit-context-building/skills/audit-context-building",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "Build system context before vulnerability conclusions.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        },
+        {
+          "path": "plugins/variant-analysis/skills/variant-analysis",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "Search for related patterns after a confirmed issue.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        },
+        {
+          "path": "plugins/modern-python/skills/modern-python",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "Modern Python project and toolchain conventions.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        },
+        {
+          "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "Dependency and maintainer risk review.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        },
+        {
+          "path": "plugins/static-analysis/skills/semgrep",
+          "category": "security-quality",
+          "license": "CC-BY-SA-4.0",
+          "reason": "Semgrep static analysis and finding triage.",
+          "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles."
+        }
+      ]
+    },
+    {
+      "id": "supabase",
+      "repo": "supabase/agent-skills",
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "commit_date": "2026-10-02T14:34:48+02:00",
+      "selected": [
+        {
+          "path": "skills/supabase-postgres-best-practices",
+          "category": "database",
+          "license": "MIT",
+          "reason": "Postgres queries, schema, connections, migrations, security, and indexes.",
+          "prerequisites": "Postgres/Supabase project; database CLI or connected Supabase MCP for live actions. Import grants no database access."
+        },
+        {
+          "path": "skills/supabase",
+          "category": "database",
+          "license": "MIT",
+          "reason": "Supabase-specific backend and operational workflows.",
+          "prerequisites": "Postgres/Supabase project; database CLI or connected Supabase MCP for live actions. Import grants no database access."
+        }
+      ]
+    },
+    {
+      "id": "huggingface",
+      "repo": "huggingface/skills",
+      "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
+      "commit_date": "2026-10-01T14:33:19+02:00",
+      "selected": [
+        {
+          "path": "skills/huggingface-datasets",
+          "category": "machine-learning",
+          "license": "Apache-2.0",
+          "reason": "Read-only Dataset Viewer pagination, filtering, metadata, and parquet.",
+          "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges."
+        },
+        {
+          "path": "skills/huggingface-community-evals",
+          "category": "machine-learning",
+          "license": "Apache-2.0",
+          "reason": "Local evaluation with inspect-ai/lighteval and explicit backend requirements.",
+          "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges."
+        },
+        {
+          "path": "skills/huggingface-local-models",
+          "category": "machine-learning",
+          "license": "Apache-2.0",
+          "reason": "Local model setup and quantization guidance.",
+          "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges."
+        },
+        {
+          "path": "skills/huggingface-gradio",
+          "category": "machine-learning",
+          "license": "Apache-2.0",
+          "reason": "Gradio components, events, and interaction patterns.",
+          "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges."
+        },
+        {
+          "path": "skills/huggingface-trackio",
+          "category": "machine-learning",
+          "license": "Apache-2.0",
+          "reason": "ML experiment tracking workflows.",
+          "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges."
+        },
+        {
+          "path": "skills/huggingface-papers",
+          "category": "machine-learning",
+          "license": "Apache-2.0",
+          "reason": "Hub paper discovery and management, distinct from systematic review.",
+          "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges."
+        },
+        {
+          "path": "skills/hf-cli",
+          "category": "machine-learning",
+          "license": "Apache-2.0",
+          "reason": "Official Hub CLI reference; account writes require task-specific authorization.",
+          "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges."
+        }
+      ]
+    },
+    {
+      "id": "openai",
+      "repo": "openai/plugins",
+      "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
+      "commit_date": "2026-09-28T10:08:07-07:00",
+      "selected": [
+        {
+          "path": "plugins/openai-developers/skills/build-chatgpt-app",
+          "category": "productivity-platform",
+          "license": "Apache-2.0",
+          "reason": "Current Apps SDK scaffolding and docs-first MCP/widget workflow.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/openai-developers/skills/chatgpt-app-submission",
+          "category": "productivity-platform",
+          "license": "Apache-2.0",
+          "reason": "ChatGPT app submission requirements and preparation.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/cloudflare/skills/cloudflare",
+          "category": "productivity-platform",
+          "license": "Apache-2.0",
+          "reason": "Retrieval-oriented Cloudflare platform guide.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/cloudflare/skills/wrangler",
+          "category": "productivity-platform",
+          "license": "Apache-2.0",
+          "reason": "Cloudflare CLI configuration and local development reference.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/cloudflare/skills/agents-sdk",
+          "category": "productivity-platform",
+          "license": "Apache-2.0",
+          "reason": "Cloudflare Agents SDK patterns; distinct from OpenAI Agents SDK.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/sentry/skills/sentry",
+          "category": "productivity-platform",
+          "license": "Apache-2.0",
+          "reason": "Read-only production issue inspection with a bundled API client.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/notion/skills/notion-research-documentation",
+          "category": "productivity-platform",
+          "license": "MIT",
+          "reason": "Source-linked synthesis of connected Notion pages.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/notion/skills/notion-knowledge-capture",
+          "category": "productivity-platform",
+          "license": "MIT",
+          "reason": "Capture notes and decisions as structured Notion content.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/notion/skills/notion-meeting-intelligence",
+          "category": "productivity-platform",
+          "license": "MIT",
+          "reason": "Meeting preparation from connected workspace context.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/notion/skills/notion-spec-to-implementation",
+          "category": "productivity-platform",
+          "license": "MIT",
+          "reason": "Translate workspace requirements into plans and tasks.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        },
+        {
+          "path": "plugins/test-android-apps/skills/android-emulator-qa",
+          "category": "productivity-platform",
+          "license": "Apache-2.0",
+          "reason": "Emulator-based app inspection and QA procedures.",
+          "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled."
+        }
+      ]
+    }
+  ]
+}

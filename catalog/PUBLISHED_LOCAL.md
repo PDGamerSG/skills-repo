@@ -1,6 +1,6 @@
 # Published local skills
 
-87 distinct bundles copied unchanged from local skill folders into `local-skills/`. Exact files and hashes: [published-local.json](published-local.json).
+88 distinct bundles copied unchanged from local skill folders into `local-skills/`. Exact files and hashes: [published-local.json](published-local.json).
 
 A bundle is published when it carries an MIT, Apache-2.0, or CC-BY-SA-4.0 license file, or when a user skill folder holds it under a name listed in [owned-skills.json](owned-skills.json). Restricted, unlicensed vendor, and malformed bundles stay local and appear below by name only.
 
@@ -52,6 +52,7 @@ A bundle is published when it carries an MIT, Apache-2.0, or CC-BY-SA-4.0 licens
 | [internal-comms](../local-skills/internal-comms--c0aca22042e6e331/SKILL.md) | Apache-2.0 | claude-user |
 | [learn](../local-skills/learn--092d454ce301722f/SKILL.md) | Apache-2.0 | claude-user |
 | [mcp-builder](../local-skills/mcp-builder--ab9580e8de0d252a/SKILL.md) | Apache-2.0 | claude-user |
+| [namecheap](../local-skills/namecheap--04ff88739c0125fc/SKILL.md) | owned-by-user | codex-user |
 | [openai-docs](../local-skills/openai-docs--df89cdaacbf4eaf4/SKILL.md) | Apache-2.0 | codex-user |
 | [prompt-master](../local-skills/prompt-master--f566cd244612c117/SKILL.md) | MIT | claude-user |
 | [receiving-code-review](../local-skills/receiving-code-review--0ac39f7bb0a987cb/SKILL.md) | MIT | openai-plugin-cache |

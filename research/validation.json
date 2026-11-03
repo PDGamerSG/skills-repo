@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-04T19:59:57.126167+00:00",
+  "checked_at": "2026-11-03T20:02:12.569818+00:00",
   "public_skills": 76,
   "public_files": 1217,
-  "published_local": 87,
+  "published_local": 88,
   "profiles": 8,
-  "local_checked": false,
+  "local_checked": true,
   "passed": true,
   "errors": [],
   "scope": "Metadata, complete bundle hashes, attribution presence, profile IDs; no skill runtime execution."

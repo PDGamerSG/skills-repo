@@ -220,6 +220,8 @@ def snapshot(args):
 
 def publish(args):
     """Copy redistributable local bundles into local-skills/ and record what stays private."""
+    selected_name = getattr(args, 'name', None)
+    matched_name = False
     owned = set(read_json(ROOT / 'catalog/owned-skills.json')['names'])
     vendored = {content_key(e['files']): e['id'] for e in read_json(ROOT / 'catalog/skills.json')['skills']}
     published, withheld, errors = {}, [], []
@@ -235,6 +237,13 @@ def publish(args):
                     name, valid = metadata(path)['name'], True
                 except (ValueError, yaml.YAMLError):
                     name, valid = path.parent.name, False
+                except OSError:
+                    if selected_name is not None:
+                        continue
+                    raise
+                if selected_name is not None and (not valid or name != selected_name):
+                    continue
+                matched_name = True
                 licfiles = license_files(path.parent, root.resolve())
                 kind = license_kind(licfiles)
                 digest, manifest = fingerprint(path.parent)
@@ -277,7 +286,20 @@ def publish(args):
                     'license_hashes': {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
                                        for p in lics}}
             except (ValueError, OSError) as exc:
-                errors.append({**origin, 'error': str(exc)})
+                message = str(exc)
+                if selected_name is not None:
+                    message = ACCOUNT_ID.sub('<id>', message.replace(str(root), label).replace(str(ROOT), '.'))
+                errors.append({**origin, 'error': message})
+    if selected_name is not None:
+        if not matched_name:
+            raise ValueError(f'No local skill matches metadata name {selected_name!r}')
+        catalog_path = ROOT / 'catalog/published-local.json'
+        if catalog_path.exists():
+            previous = read_json(catalog_path)
+            # A targeted publish adds versions without removing existing bundles or scan evidence.
+            published = {**{e['id']: e for e in previous['skills']}, **published}
+            withheld = previous['withheld'] + [e for e in withheld if e not in previous['withheld']]
+            errors = previous['errors'] + [e for e in errors if e not in previous['errors']]
     entries = sorted(published.values(), key=lambda e: e['id'])
     write_json(ROOT / 'catalog/published-local.json', {'captured_at': datetime.now(timezone.utc).isoformat(),
                                                       'skills': entries, 'withheld': withheld, 'errors': errors})
@@ -520,7 +542,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     p = sub.add_parser('snapshot'); p.add_argument('--root', action='append'); p.set_defaults(fn=snapshot)
-    p = sub.add_parser('publish'); p.set_defaults(fn=publish)
+    p = sub.add_parser('publish'); p.add_argument('--name', help='Publish only this exact metadata name, retaining existing catalog records'); p.set_defaults(fn=publish)
     p = sub.add_parser('vendor'); p.set_defaults(fn=vendor)
     p = sub.add_parser('verify'); p.add_argument('--local', action='store_true'); p.set_defaults(fn=verify)
     p = sub.add_parser('list'); p.add_argument('query', nargs='?', default=''); p.add_argument('--local', action='store_true')

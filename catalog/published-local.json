@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-04T19:59:13.063167+00:00",
+  "captured_at": "2026-11-03T20:02:03.647888+00:00",
   "skills": [
     {
       "id": "algorithmic-art--a0e5fc71f3af0a59",
@@ -4079,6 +4079,54 @@
       "license_hashes": {
         "licenses/local/mcp-builder--ab9580e8de0d252a/0-LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
       }
+    },
+    {
+      "id": "namecheap--04ff88739c0125fc",
+      "name": "namecheap",
+      "license": "owned-by-user",
+      "origins": [
+        {
+          "provider": "codex-user",
+          "path": "namecheap"
+        }
+      ],
+      "path": "local-skills/namecheap--04ff88739c0125fc",
+      "prerequisites": "Original plugin tools, packages, and connectors; see SKILL.md.",
+      "sha256": "04ff88739c0125fc2e2d2be06d50f0c6dc41cd51b175c3ab6813656ade462094",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "17e0235dd3bf6b8bbced5ee0a3710627edff31f99c8d0d26d1d15f96cfcdf88f",
+          "executable": false
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "711e2b180c23d63f4c969761fa8c6af844b3c4746265fe1b878d8c9ced01fd16",
+          "executable": false
+        },
+        {
+          "path": "references/deployment.md",
+          "sha256": "3fb733218a3f3edd49d2d703613010e07a1e7bebf5707526fc1993b7b7ac1e86",
+          "executable": false
+        },
+        {
+          "path": "references/verification.md",
+          "sha256": "7dda92c9d52044c8b82936c85fa8186814f655e23c7e15266a955aa7ee2dd057",
+          "executable": false
+        },
+        {
+          "path": "scripts/deploy_check.py",
+          "sha256": "e1d1db84041649ac0d26d61515291eee0690732242b2dce0ede4f9bc5b11c5f3",
+          "executable": false
+        },
+        {
+          "path": "tests/test_deploy_check.py",
+          "sha256": "e8c413bbbb189895d0a4b14503c0bcabbbc82eb41e63d268428d0eea0a8984bf",
+          "executable": false
+        }
+      ],
+      "license_files": [],
+      "license_hashes": {}
     },
     {
       "id": "openai-docs--df89cdaacbf4eaf4",

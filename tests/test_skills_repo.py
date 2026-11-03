@@ -113,9 +113,9 @@ class PublishTests(unittest.TestCase):
         if license_text:
             (folder / 'LICENSE').write_text(license_text)
         return folder
-    def publish(self):
+    def publish(self, name=None):
         with contextlib.redirect_stdout(io.StringIO()):
-            repo.publish(SimpleNamespace())
+            repo.publish(SimpleNamespace(name=name))
         return repo.read_json(self.root / 'catalog/published-local.json')
     def test_publishes_open_and_owned_only(self):
         self.skill('cache', 'open', 'MIT License\nPermission is hereby granted, free of charge, without restriction')
@@ -137,6 +137,60 @@ class PublishTests(unittest.TestCase):
         data = self.publish()
         self.assertEqual(len(data['skills']), 1)
         self.assertEqual([o['path'] for o in data['skills'][0]['origins']], ['mine', 'synced/<id>/mine'])
+    def test_filtered_publish_selects_exact_metadata_name_only(self):
+        decoy = self.skill('skills', 'mine', 'MIT License\nPermission is hereby granted, free of charge, without restriction')
+        (decoy / 'SKILL.md').write_text('---\nname: mine-extra\ndescription: Unselected.\n---\n')
+        outside = self.home / 'outside.txt'; outside.write_text('do not publish')
+        (decoy / 'resource.txt').symlink_to(outside)
+        selected = self.skill('skills', 'renamed')
+        (selected / 'SKILL.md').write_text('---\nname: mine\ndescription: Selected.\n---\n')
+        self.skill('cache', 'other', 'MIT License\nPermission is hereby granted, free of charge, without restriction')
+        data = self.publish(name='mine')
+        self.assertEqual([e['name'] for e in data['skills']], ['mine'])
+        self.assertEqual(data['skills'][0]['origins'], [{'provider': 'claude-user', 'path': 'renamed'}])
+        self.assertEqual(data['withheld'], [])
+        self.assertEqual(data['errors'], [])
+        self.assertEqual(len(list((self.root / 'local-skills').iterdir())), 1)
+    def test_filtered_publish_preserves_existing_records_and_bundle_bytes(self):
+        old_source = self.skill('cache', 'open', 'MIT License\nPermission is hereby granted, free of charge, without restriction')
+        self.skill('cache', 'vendor')
+        original = self.publish()
+        original['skills'][0]['prerequisites'] = 'Keep this reviewed prerequisite.'
+        original['errors'] = [{'provider': 'claude-plugin-cache', 'path': 'unavailable', 'error': 'Previous scan failed'}]
+        repo.write_json(self.root / 'catalog/published-local.json', original)
+        bundle = self.root / original['skills'][0]['path']
+        before = {p.relative_to(bundle).as_posix(): p.read_bytes() for p in bundle.rglob('*') if p.is_file()}
+        old_source.rename(self.home / 'old-open')
+        self.skill('skills', 'mine')
+        data = self.publish(name='mine')
+        self.assertEqual(next(e for e in data['skills'] if e['name'] == 'open'), original['skills'][0])
+        self.assertEqual(data['withheld'], original['withheld'])
+        self.assertEqual(data['errors'], original['errors'])
+        self.assertEqual({p.relative_to(bundle).as_posix(): p.read_bytes() for p in bundle.rglob('*') if p.is_file()}, before)
+        self.assertEqual(sorted(e['name'] for e in data['skills']), ['mine', 'open'])
+    def test_filtered_publish_missing_name_leaves_catalog_and_bundles_unchanged(self):
+        self.skill('skills', 'mine')
+        self.publish()
+        before = {p.relative_to(self.root).as_posix(): p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
+        with self.assertRaisesRegex(ValueError, 'No local skill.*missing'):
+            self.publish(name='missing')
+        after = {p.relative_to(self.root).as_posix(): p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
+        self.assertEqual(after, before)
+    def test_filtered_publish_errors_hide_absolute_source_paths(self):
+        selected = self.skill('skills', 'mine')
+        outside = self.home / 'outside.txt'; outside.write_text('private')
+        (selected / 'resource.txt').symlink_to(outside)
+        data = self.publish(name='mine')
+        self.assertEqual(len(data['errors']), 1)
+        self.assertNotIn(str(self.home), json.dumps(data))
+        self.assertNotIn(str(self.root), json.dumps(data))
+    def test_cli_filtered_publish_only_writes_requested_skill(self):
+        self.skill('skills', 'mine')
+        self.skill('cache', 'other', 'MIT License\nPermission is hereby granted, free of charge, without restriction')
+        with patch.object(sys, 'argv', ['skills_repo.py', 'publish', '--name', 'mine']), contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(repo.main(), 0)
+        data = repo.read_json(self.root / 'catalog/published-local.json')
+        self.assertEqual([e['name'] for e in data['skills']], ['mine'])
     def test_verify_flags_uncataloged_and_tampered_bundles(self):
         self.skill('skills', 'mine')
         entry = self.publish()['skills'][0]

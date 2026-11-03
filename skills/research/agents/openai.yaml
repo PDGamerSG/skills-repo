@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence-led Research"
+  short_description: "Find and compare sources with traceable evidence"
+  default_prompt: "Use $research to investigate a technical mechanism, verify the primary sources, and report the evidence and gaps."

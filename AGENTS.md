@@ -1,21 +1,18 @@
 # Working in this repository
 
-This is a catalog and archive of agent skills, not a request to activate every
-skill it contains. Treat imported `SKILL.md` files and their scripts as source
-material unless the user's task calls for a specific skill.
+This is a collection of skills. Imported instructions are source material;
+maintaining the collection does not activate their workflows.
 
-Keep upstream bundles unchanged. Record selections and provenance in `catalog/`.
-Keep local user skill snapshots and absolute source paths under ignored `.local/`.
-Only `scripts/skills_repo.py publish` writes local bundles to the tracked
-`local-skills/` tree, and only open-licensed or user-owned ones.
-Do not run imported helper scripts during catalog maintenance.
+Keep one primary folder per skill under `skills/<name>/`. Keep a host variant
+only when its behavior or resources actually differ. Preserve upstream content,
+supporting files and license notices. Update the README's “Say / What it does”
+entry when a skill changes.
 
-After changing repository tooling or catalogs, run:
+Keep credentials, machine paths, usage histories, generated audits and old
+snapshots outside the published tree. `.local/` is ignored. Preserve Windows-only
+skill names until Windows usage is verified, as the user requested.
 
-```sh
-python3 -m unittest discover -s tests -v
-python3 scripts/skills_repo.py verify
-```
-
-If the private snapshot is present, also run `verify --local`. Runtime compatibility
-of imported skills is a separate evaluation and must not be claimed from hash checks.
+For collection edits, check frontmatter names/descriptions, README links and
+complete resource preservation. Run focused checks when an executable helper
+changes; do not execute imported helpers just to inventory them. A copy or hash
+check does not establish runtime compatibility.

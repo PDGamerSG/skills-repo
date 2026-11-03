@@ -1,4 +1,0 @@
-interface:
-  display_name: "Namecheap"
-  short_description: "Deploy to Vercel and connect your Namecheap domain"
-  default_prompt: "Use $namecheap to publish my project on a subdomain of pallabdas.me and verify the latest version is live."

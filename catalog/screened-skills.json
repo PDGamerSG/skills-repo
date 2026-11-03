@@ -48,8 +48,8 @@
       "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
       "url": "https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/claude-api",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "discernment-nudge",
@@ -178,8 +178,8 @@
       "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
       "url": "https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/webapp-testing",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "xlsx",
@@ -958,8 +958,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/cloudflare/skills/agents-sdk",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "building-ai-agent-on-cloudflare",
@@ -988,8 +988,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/cloudflare/skills/cloudflare",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "durable-objects",
@@ -1038,8 +1038,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/cloudflare/skills/wrangler",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "code-review",
@@ -2668,8 +2668,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/notion/skills/notion-knowledge-capture",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "notion-meeting-intelligence",
@@ -2678,8 +2678,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/notion/skills/notion-meeting-intelligence",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "notion-research-documentation",
@@ -2688,8 +2688,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/notion/skills/notion-research-documentation",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "notion-spec-to-implementation",
@@ -2698,8 +2698,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/notion/skills/notion-spec-to-implementation",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "aiq-deploy",
@@ -2848,8 +2848,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/openai-developers/skills/build-chatgpt-app",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "chatgpt-app-submission",
@@ -2858,8 +2858,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/openai-developers/skills/chatgpt-app-submission",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "openai-api-troubleshooting",
@@ -3438,8 +3438,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/sentry/skills/sentry",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "shopify-admin",
@@ -3918,8 +3918,8 @@
       "commit": "5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f",
       "url": "https://github.com/openai/plugins/tree/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f/plugins/test-android-apps/skills/android-emulator-qa",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "android-performance",
@@ -6558,8 +6558,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/exploratory-data-analysis",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "fictiv",
@@ -6908,8 +6908,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/markitdown",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "matchms",
@@ -6938,8 +6938,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/matplotlib",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "medchem",
@@ -7258,8 +7258,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/polars",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "polars-bio",
@@ -7278,8 +7278,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/pptx-posters",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "primekg",
@@ -7528,8 +7528,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/research-grants",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "research-lookup",
@@ -7608,8 +7608,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/scientific-slides",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "scientific-visualization",
@@ -7618,8 +7618,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/scientific-visualization",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "scientific-writing",
@@ -7628,8 +7628,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/scientific-writing",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "scikit-bio",
@@ -7688,8 +7688,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/seaborn",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "shap",
@@ -7758,8 +7758,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/sympy",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "tamarind",
@@ -7858,8 +7858,8 @@
       "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/skills/uncertainty-and-units",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "usfiscaldata",
@@ -8028,8 +8028,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/audit-context-building/skills/audit-context-building",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "algorand-vulnerability-scanner",
@@ -8258,8 +8258,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/differential-review/skills/differential-review",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "dimensional-analysis",
@@ -8368,8 +8368,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/modern-python/skills/modern-python",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "mutation-testing",
@@ -8408,8 +8408,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/property-based-testing/skills/property-based-testing",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "review-walkthrough",
@@ -8468,8 +8468,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/sharp-edges/skills/sharp-edges",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "spec-to-code-compliance",
@@ -8508,8 +8508,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/static-analysis/skills/semgrep",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "supply-chain-risk-auditor",
@@ -8518,8 +8518,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "address-sanitizer",
@@ -8818,8 +8818,8 @@
       "commit": "82fe8226252622fa807643bdca1710901198553a",
       "url": "https://github.com/trailofbits/skills/tree/82fe8226252622fa807643bdca1710901198553a/plugins/variant-analysis/skills/variant-analysis",
       "license": "CC-BY-SA-4.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "vulnerability-triage-brocards",
@@ -8868,8 +8868,8 @@
       "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
       "url": "https://github.com/supabase/agent-skills/tree/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "supabase-postgres-best-practices",
@@ -8878,8 +8878,8 @@
       "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
       "url": "https://github.com/supabase/agent-skills/tree/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase-postgres-best-practices",
       "license": "MIT",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "hf-mcp",
@@ -8898,8 +8898,8 @@
       "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
       "url": "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/hf-cli",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "hf-cloud-aws-context-discovery",
@@ -8988,8 +8988,8 @@
       "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
       "url": "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/huggingface-community-evals",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "huggingface-datasets",
@@ -8998,8 +8998,8 @@
       "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
       "url": "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/huggingface-datasets",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "huggingface-gradio",
@@ -9008,8 +9008,8 @@
       "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
       "url": "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/huggingface-gradio",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "huggingface-llm-trainer",
@@ -9028,8 +9028,8 @@
       "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
       "url": "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/huggingface-local-models",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "huggingface-lora-space-builder",
@@ -9058,8 +9058,8 @@
       "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
       "url": "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/huggingface-papers",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "huggingface-spaces",
@@ -9088,8 +9088,8 @@
       "commit": "ca0325bb20b2d0a1b2efa893670c4c72f79e707b",
       "url": "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/huggingface-trackio",
       "license": "Apache-2.0",
-      "status": "vendored",
-      "decision": "Selected for balanced task coverage; see catalog/skills.json for rationale."
+      "status": "reference-only",
+      "decision": "Removed from the personal library on 2026-11-04: no observed installation on current Mac or saved Mac/Windows inventories, no invocation in available Mac history, and no retained workflow dependency. Windows live usage history was unavailable; see catalog/USAGE_REVIEW.md."
     },
     {
       "name": "huggingface-vision-trainer",

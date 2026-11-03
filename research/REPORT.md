@@ -1,5 +1,9 @@
 # Research and selection report
 
+Historical report: the initial broad import selection described below was
+curated on 4 November 2026. See the [current usage review](../catalog/USAGE_REVIEW.md)
+for removals, retained dependencies, and the limits of Windows usage evidence.
+
 Research date: **5 October 2026, Asia/Kolkata**. Retrieval began on 4 October UTC.
 Scope: the skills available on this Mac and a balanced public-source collection
 for coding, research, documents, design, data, and productivity.

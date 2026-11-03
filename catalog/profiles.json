@@ -3,13 +3,8 @@
     "obra/systematic-debugging",
     "obra/verification-before-completion",
     "anthropics/frontend-design",
-    "anthropics/webapp-testing",
     "k-dense/citation-management",
-    "k-dense/scientific-critical-thinking",
-    "k-dense/exploratory-data-analysis",
-    "k-dense/markitdown",
-    "k-dense/scientific-writing",
-    "supabase/supabase-postgres-best-practices"
+    "k-dense/scientific-critical-thinking"
   ],
   "coding": [
     "obra/brainstorming",
@@ -18,9 +13,7 @@
     "obra/test-driven-development",
     "obra/verification-before-completion",
     "obra/requesting-code-review",
-    "anthropics/frontend-design",
-    "anthropics/webapp-testing",
-    "supabase/supabase-postgres-best-practices"
+    "anthropics/frontend-design"
   ],
   "research": [
     "k-dense/literature-review",
@@ -30,44 +23,17 @@
     "k-dense/peer-review",
     "k-dense/experimental-design",
     "k-dense/statistical-analysis",
-    "k-dense/hypothesis-generation",
-    "k-dense/uncertainty-and-units"
+    "k-dense/hypothesis-generation"
   ],
   "documents": [
-    "k-dense/markitdown",
-    "k-dense/scientific-writing",
-    "k-dense/scientific-slides",
-    "k-dense/pptx-posters",
-    "k-dense/research-grants",
     "anthropics/theme-factory",
     "anthropics/internal-comms"
   ],
   "productivity": [
-    "openai/notion-knowledge-capture",
-    "openai/notion-research-documentation",
-    "openai/notion-meeting-intelligence",
-    "openai/notion-spec-to-implementation",
-    "openai/sentry",
     "anthropics/internal-comms"
   ],
-  "security": [
-    "trailofbits/differential-review",
-    "trailofbits/property-based-testing",
-    "trailofbits/sharp-edges",
-    "trailofbits/audit-context-building",
-    "trailofbits/variant-analysis",
-    "trailofbits/semgrep",
-    "trailofbits/supply-chain-risk-auditor"
-  ],
   "data-ml": [
-    "k-dense/exploratory-data-analysis",
-    "k-dense/polars",
-    "k-dense/statsmodels",
-    "k-dense/scientific-visualization",
-    "huggingface/huggingface-datasets",
-    "huggingface/huggingface-community-evals",
-    "huggingface/huggingface-gradio",
-    "huggingface/huggingface-trackio"
+    "k-dense/statsmodels"
   ],
   "superpowers-framework": [
     "obra/using-superpowers",

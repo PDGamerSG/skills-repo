@@ -1,13 +1,11 @@
 {
   "anthropics/skills": {
     "category": "documents-design",
-    "prerequisites": "Skill-specific Node/Python packages; webapp-testing needs Playwright. Claude-specific tools and optional dependencies are not provisioned.",
+    "prerequisites": "Skill-specific Node/Python packages. Claude-specific tools and optional dependencies are not provisioned.",
     "skills": {
       "frontend-design": "Intentional UI direction, typography, and subject-specific design guidance.",
-      "webapp-testing": "Local browser verification with server lifecycle examples.",
       "mcp-builder": "Structured MCP tool design, implementation, and evaluation workflow.",
       "skill-creator": "Skill authoring with activation and output evaluation resources.",
-      "claude-api": "Vendor-maintained Claude API and SDK development guidance.",
       "internal-comms": "Progress updates, incident reports, and organizational communication examples.",
       "brand-guidelines": "Concrete typography and brand reference; Anthropic branding needs adaptation.",
       "theme-factory": "Reusable themes and consistent presentation styling.",
@@ -50,71 +48,7 @@
       "statistical-analysis": "Assumption checks, effect sizes, power, and transparent reporting.",
       "experimental-design": "Design selection, randomization, factorial design, and pseudoreplication checks.",
       "hypothesis-generation": "Evidence-grounded hypotheses and discriminating predictions.",
-      "exploratory-data-analysis": "Format-aware inspection and data quality reporting.",
-      "scientific-visualization": "Figure meaning, uncertainty, accessibility, export, and verification.",
-      "matplotlib": "Programmatic plotting reference and export patterns.",
-      "seaborn": "Statistical plots and visualization patterns.",
-      "statsmodels": "Statistical estimation, diagnostics, and model workflows.",
-      "polars": "Efficient dataframe transformations.",
-      "sympy": "Symbolic algebra and mathematical computation.",
-      "uncertainty-and-units": "Dimensions, units, and propagated uncertainty.",
-      "markitdown": "Convert office files and other documents to Markdown for analysis.",
-      "scientific-writing": "Evidence-led scientific writing and manuscript structure.",
-      "scientific-slides": "Research presentation design and slide preparation.",
-      "pptx-posters": "PowerPoint-oriented scientific poster workflow.",
-      "research-grants": "Structured research proposal and grant writing."
-    }
-  },
-  "trailofbits/skills": {
-    "category": "security-quality",
-    "prerequisites": "Git and language tooling; optional analyzers and credentials. Named agent helpers may need upstream plugin installation. CC-BY-SA-4.0 applies to these unchanged bundles.",
-    "skills": {
-      "differential-review": "Security review of changes with history, impact scope, and evidence.",
-      "property-based-testing": "Invariants, oracles, shrinking, and selection of useful properties.",
-      "sharp-edges": "API and configuration designs that enable security mistakes.",
-      "audit-context-building": "Build system context before vulnerability conclusions.",
-      "variant-analysis": "Search for related patterns after a confirmed issue.",
-      "modern-python": "Modern Python project and toolchain conventions.",
-      "supply-chain-risk-auditor": "Dependency and maintainer risk review.",
-      "semgrep": "Semgrep static analysis and finding triage."
-    }
-  },
-  "supabase/agent-skills": {
-    "category": "database",
-    "prerequisites": "Postgres/Supabase project; database CLI or connected Supabase MCP for live actions. Import grants no database access.",
-    "skills": {
-      "supabase-postgres-best-practices": "Postgres queries, schema, connections, migrations, security, and indexes.",
-      "supabase": "Supabase-specific backend and operational workflows."
-    }
-  },
-  "huggingface/skills": {
-    "category": "machine-learning",
-    "prerequisites": "Skill-specific Hugging Face libraries/CLI; HF_TOKEN for gated data/account actions. Model evaluation may need GPU. Remote jobs can incur charges.",
-    "skills": {
-      "huggingface-datasets": "Read-only Dataset Viewer pagination, filtering, metadata, and parquet.",
-      "huggingface-community-evals": "Local evaluation with inspect-ai/lighteval and explicit backend requirements.",
-      "huggingface-local-models": "Local model setup and quantization guidance.",
-      "huggingface-gradio": "Gradio components, events, and interaction patterns.",
-      "huggingface-trackio": "ML experiment tracking workflows.",
-      "huggingface-papers": "Hub paper discovery and management, distinct from systematic review.",
-      "hf-cli": "Official Hub CLI reference; account writes require task-specific authorization."
-    }
-  },
-  "openai/plugins": {
-    "category": "productivity-platform",
-    "prerequisites": "Skill-specific MCP/account connections or platform CLIs. Sentry needs a locally configured read token; Notion needs its connector; Android needs an emulator. Plugin wiring is not bundled.",
-    "skills": {
-      "plugins/openai-developers/skills/build-chatgpt-app": "Current Apps SDK scaffolding and docs-first MCP/widget workflow.",
-      "plugins/openai-developers/skills/chatgpt-app-submission": "ChatGPT app submission requirements and preparation.",
-      "plugins/cloudflare/skills/cloudflare": "Retrieval-oriented Cloudflare platform guide.",
-      "plugins/cloudflare/skills/wrangler": "Cloudflare CLI configuration and local development reference.",
-      "plugins/cloudflare/skills/agents-sdk": "Cloudflare Agents SDK patterns; distinct from OpenAI Agents SDK.",
-      "plugins/sentry/skills/sentry": "Read-only production issue inspection with a bundled API client.",
-      "plugins/notion/skills/notion-research-documentation": "Source-linked synthesis of connected Notion pages.",
-      "plugins/notion/skills/notion-knowledge-capture": "Capture notes and decisions as structured Notion content.",
-      "plugins/notion/skills/notion-meeting-intelligence": "Meeting preparation from connected workspace context.",
-      "plugins/notion/skills/notion-spec-to-implementation": "Translate workspace requirements into plans and tasks.",
-      "plugins/test-android-apps/skills/android-emulator-qa": "Emulator-based app inspection and QA procedures."
+      "statsmodels": "Statistical estimation, diagnostics, and model workflows."
     }
   }
 }

@@ -3,7 +3,8 @@
 A researched collection of the skills available on this Mac, plus selected public
 skills for coding, research, documents, design, data, and productivity.
 
-Built on **5 October 2026 (Asia/Kolkata)**. The GitHub repository contains the
+Initially built on **5 October 2026 (Asia/Kolkata)**; curated on **4 November 2026**.
+The GitHub repository contains the
 public imports, catalogs, research, and tooling. Private local snapshots remain
 on this Mac. Existing skill installations are unchanged.
 
@@ -11,13 +12,14 @@ on this Mac. Existing skill installations are unchanged.
 
 | Collection | Coverage | Location |
 |---|---|---|
-| Local inventory | 225 occurrences, 138 distinct bundles across Claude, Codex, shared folders, and plugin caches | [Local catalog](catalog/LOCAL_SKILLS.md) |
+| Mac inventory snapshot (5 October) | 225 occurrences, 138 distinct bundles across Claude, Codex, shared folders, and plugin caches | [Local catalog](catalog/LOCAL_SKILLS.md) |
 | Private preservation | 133 distinct bundles, including supporting resources | `.local/archive/` (ignored by Git) |
 | Restricted installed bundles | Five distinct bundles / nine occurrences, recorded as references to the original installations | `.local/inventory.json` |
-| Public imports | 76 unchanged bundles from seven sources, with pinned commits and licenses | [Public catalog](catalog/README.md), `skills/` |
+| Public imports | 34 unchanged bundles from three sources, with pinned commits and licenses | [Public catalog](catalog/README.md), `skills/` |
 | Published local skills | 88 distinct bundles: 79 with MIT or Apache-2.0 license files and 9 written by the user | [Published catalog](catalog/PUBLISHED_LOCAL.md), `local-skills/` |
 | Broader discovery | 926 folders inventoried across ten public repositories | [Screened catalog](catalog/screened-skills.json) |
 | Research | Selection rationale, evidence, dependency limits, and overlap analysis | [Research report](research/REPORT.md) |
+| Usage-based cleanup | 42 imported extras removed after checking available Mac history and Mac/Windows installation evidence | [Usage review](catalog/USAGE_REVIEW.md), [decisions](catalog/curation.json) |
 
 Local snapshots stay on this Mac. A Git clone carries the public imports, the
 published local skills, and catalogs, not `.local/`. Restricted copies were not duplicated. Local source
@@ -51,11 +53,9 @@ Useful starting choices:
 | Frontend work | `anthropics/frontend-design`; upstream Vercel React/composition references |
 | Research and evidence appraisal | Your local `research` customization; `k-dense/literature-review`, `k-dense/scientific-critical-thinking` |
 | Citation accuracy | Your local customization or `k-dense/citation-management`; choose one version |
-| Data and scientific figures | `k-dense/exploratory-data-analysis`, `k-dense/scientific-visualization` |
-| Documents and presentations | Existing document skills; `k-dense/markitdown`, `k-dense/scientific-slides`, `k-dense/scientific-writing` |
-| Connected productivity | OpenAI's Notion skill variants, when the Notion connector is available |
-| SQL and backend design | `supabase/supabase-postgres-best-practices` |
-| Review and testing | `trailofbits/differential-review`, `trailofbits/property-based-testing` |
+| Documents and presentations | Existing authorized document skills; `anthropics/theme-factory` for themes |
+| Review and testing | `obra/requesting-code-review`, `obra/test-driven-development` |
+| Custom domain deployment | Published local `namecheap` skill |
 
 These are fit-based recommendations from source review, not a benchmark ranking.
 Prerequisites and limitations are recorded per skill in `catalog/skills.json`.
@@ -69,7 +69,7 @@ python3 scripts/skills_repo.py install --profile balanced --dest .local/staging-
 python3 scripts/skills_repo.py install --profile balanced --dest .local/staging-skills
 ```
 
-Profiles: `balanced`, `coding`, `research`, `documents`, `productivity`, `security`,
+Profiles: `balanced`, `coding`, `research`, `documents`, `productivity`,
 `data-ml`, and `superpowers-framework`. See [profiles.json](catalog/profiles.json).
 Framework-wide activation and delegated workflows are confined to the opt-in
 framework profile. Profiles are alternatives; combining them may duplicate names.

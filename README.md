@@ -16,7 +16,7 @@ on this Mac. Existing skill installations are unchanged.
 | Private preservation | 133 distinct bundles, including supporting resources | `.local/archive/` (ignored by Git) |
 | Restricted installed bundles | Five distinct bundles / nine occurrences, recorded as references to the original installations | `.local/inventory.json` |
 | Public imports | 34 unchanged bundles from three sources, with pinned commits and licenses | [Public catalog](catalog/README.md), `skills/` |
-| Published local skills | 88 distinct bundles: 79 with MIT or Apache-2.0 license files and 9 written by the user | [Published catalog](catalog/PUBLISHED_LOCAL.md), `local-skills/` |
+| Published local skills | 89 distinct bundles: 79 with MIT or Apache-2.0 license files and 10 written by the user | [Published catalog](catalog/PUBLISHED_LOCAL.md), `local-skills/` |
 | Broader discovery | 926 folders inventoried across ten public repositories | [Screened catalog](catalog/screened-skills.json) |
 | Research | Selection rationale, evidence, dependency limits, and overlap analysis | [Research report](research/REPORT.md) |
 | Usage-based cleanup | 42 imported extras removed after checking available Mac history and Mac/Windows installation evidence | [Usage review](catalog/USAGE_REVIEW.md), [decisions](catalog/curation.json) |
@@ -108,11 +108,14 @@ ChatGPT plugin. See [official OpenAI skill guidance](https://developers.openai.c
 
 ## Namecheap deployment skill
 
-The personal `namecheap` skill publishes a project to Vercel, connects its
-Namecheap subdomain, and checks the live release and relevant features. Invoke
-`$namecheap` to be asked for a project name, or `$namecheap Agent Verse` to start
-with a name. The default URL for that example is `https://agentverse.pallabdas.me`.
-The actual source folder or Vercel project must be identified before deployment.
+The current [`namecheap` skill](local-skills/namecheap--81a8f85deb40ed75/SKILL.md)
+connects a Namecheap subdomain to the intended ready Vercel release, deploying
+only when publication is required. Invoke `$namecheap` with existing project
+context, or `$namecheap Agent Verse` to supply a name. It reuses known project
+details and saved login, opens Advanced DNS directly, and shares one 180-second
+propagation deadline across checks. Cached local DNS has a TLS-validating
+fallback with browser verification reported separately. The default URL for
+that example is `https://agentverse.pallabdas.me`; an explicit hostname wins.
 
 Find its current bundle and install it into your agent's skill directory:
 
@@ -121,7 +124,8 @@ python3 scripts/skills_repo.py list --published namecheap
 python3 scripts/skills_repo.py install --published BUNDLE-ID --dest ~/.codex/skills
 ```
 
-Use the ID from the list output. The published bundle includes workflow
+Use the ID for the version linked above; earlier versions remain archived.
+The published bundle includes workflow
 instructions, a hostname/release verification helper, and its tests. Saved
 Namecheap credentials remain in `~/.config/namecheap/credentials.env` on the
 owner's machine, with owner-only access; account access is not included in GitHub.

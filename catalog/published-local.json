@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-11-03T20:02:03.647888+00:00",
+  "captured_at": "2026-11-03T20:48:00.317598+00:00",
   "skills": [
     {
       "id": "algorithmic-art--a0e5fc71f3af0a59",
@@ -4112,6 +4112,54 @@
         {
           "path": "references/verification.md",
           "sha256": "7dda92c9d52044c8b82936c85fa8186814f655e23c7e15266a955aa7ee2dd057",
+          "executable": false
+        },
+        {
+          "path": "scripts/deploy_check.py",
+          "sha256": "e1d1db84041649ac0d26d61515291eee0690732242b2dce0ede4f9bc5b11c5f3",
+          "executable": false
+        },
+        {
+          "path": "tests/test_deploy_check.py",
+          "sha256": "e8c413bbbb189895d0a4b14503c0bcabbbc82eb41e63d268428d0eea0a8984bf",
+          "executable": false
+        }
+      ],
+      "license_files": [],
+      "license_hashes": {}
+    },
+    {
+      "id": "namecheap--81a8f85deb40ed75",
+      "name": "namecheap",
+      "license": "owned-by-user",
+      "origins": [
+        {
+          "provider": "codex-user",
+          "path": "namecheap"
+        }
+      ],
+      "path": "local-skills/namecheap--81a8f85deb40ed75",
+      "prerequisites": "Original plugin tools, packages, and connectors; see SKILL.md.",
+      "sha256": "81a8f85deb40ed758fc733ea770d8ff9cef901b180db3c9a350a7f0cf459e39c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a77ff7f3ed40b1d761f3dc2e350e159aef2f362dfe16e4b20e5a5f92bcf0f602",
+          "executable": false
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "711e2b180c23d63f4c969761fa8c6af844b3c4746265fe1b878d8c9ced01fd16",
+          "executable": false
+        },
+        {
+          "path": "references/deployment.md",
+          "sha256": "2796de2d547e92e197c700597da5fb55a7dd070b8560ad8d0ef8a512017161f8",
+          "executable": false
+        },
+        {
+          "path": "references/verification.md",
+          "sha256": "362ac2bb392443bd311953817f960939cb5b55e7ccc77c5175ab7cea9f8c7888",
           "executable": false
         },
         {
